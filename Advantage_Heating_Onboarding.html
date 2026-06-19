@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advantage Heating — Onboarding Brief</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f6fa; color: #1a1a2e; line-height: 1.6; }
+  .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 32px 40px; }
+  .header-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
+  .company-name { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+  .badge { display: inline-block; background: #10b981; color: white; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 20px; letter-spacing: 0.5px; text-transform: uppercase; }
+  .header-meta { font-size: 13px; color: #94a3b8; margin-top: 6px; }
+  .header-meta span { margin-right: 20px; }
+  .content { max-width: 1100px; margin: 0 auto; padding: 32px 24px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .card { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .section-label { font-size: 10px; font-weight: 700; color: #6b7280; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid #f0f0f0; }
+  .kv { margin-bottom: 10px; }
+  .kv-label { font-size: 11px; color: #6b7280; font-weight: 600; margin-bottom: 2px; }
+  .kv-value { font-size: 14px; color: #1a1a2e; font-weight: 500; }
+  .tag { display: inline-block; background: #eff6ff; color: #1d4ed8; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px; margin: 2px; }
+  .tag.green { background: #ecfdf5; color: #065f46; }
+  .tag.amber { background: #fffbeb; color: #92400e; }
+  .tag.red { background: #fef2f2; color: #991b1b; }
+  .contact-card { border: 1px solid #e5e7eb; border-radius: 8px; padding: 14px; margin-bottom: 10px; }
+  .contact-name { font-weight: 700; font-size: 14px; color: #1a1a2e; }
+  .contact-title { font-size: 12px; color: #6b7280; margin-bottom: 6px; }
+  .contact-email { font-size: 12px; color: #2563eb; font-family: monospace; }
+  .contact-phone { font-size: 12px; color: #374151; }
+  .contact-badge { float: right; }
+  .risk-item { border-left: 3px solid #ef4444; padding: 10px 14px; background: #fef2f2; border-radius: 0 6px 6px 0; margin-bottom: 8px; font-size: 13px; }
+  .risk-item.amber { border-color: #f59e0b; background: #fffbeb; }
+  .risk-item.green { border-color: #10b981; background: #ecfdf5; }
+  .metric-box { text-align: center; padding: 16px; border: 1px solid #e5e7eb; border-radius: 8px; }
+  .metric-number { font-size: 28px; font-weight: 800; color: #1d4ed8; }
+  .metric-label { font-size: 11px; color: #6b7280; margin-top: 2px; }
+  ul.clean { list-style: none; padding: 0; }
+  ul.clean li { padding: 4px 0; font-size: 13px; color: #374151; border-bottom: 1px solid #f9f9f9; }
+  ul.clean li:before { content: "→ "; color: #9ca3af; }
+  .alert { background: #fef3c7; border: 1px solid #fbbf24; border-radius: 8px; padding: 12px 16px; font-size: 13px; color: #92400e; margin-bottom: 16px; }
+  .alert strong { display: block; margin-bottom: 4px; }
+  .alert.red { background: #fef2f2; border-color: #fca5a5; color: #991b1b; }
+  .footer { text-align: center; color: #9ca3af; font-size: 12px; padding: 24px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-top">
+    <div class="company-name">Advantage Heating</div>
+    <span class="badge">New Customer</span>
+  </div>
+  <div class="header-meta">
+    <span>📍 Salem, OR (503-393-5315)</span>
+    <span>🔧 CRM: Unknown [CONFIRM]</span>
+    <span>👥 ~125 employees</span>
+    <span>📋 HubSpot ID: 32420959585</span>
+    <span>Generated: June 19, 2026</span>
+  </div>
+</div>
+
+<div class="content">
+
+  <div class="alert">
+    <strong>⚠️ Low Data Availability — Larger Company, Need Thorough Week 0</strong>
+    No Attention calls found. Web fetch blocked. All data from HubSpot only. At 125 employees, this is a mid-sized HVAC company — likely multiple business units, higher call volume, and more complex capacity planning than a typical SMB. Week 0 must be thorough.
+  </div>
+
+  <!-- Key Stats -->
+  <div class="grid-3">
+    <div class="metric-box">
+      <div class="metric-number">$30K</div>
+      <div class="metric-label">ARR — Responder (2,000 min/mo)</div>
+    </div>
+    <div class="metric-box">
+      <div class="metric-number">125</div>
+      <div class="metric-label">Employees</div>
+    </div>
+    <div class="metric-box">
+      <div class="metric-number">May 21</div>
+      <div class="metric-label">Deal Closed</div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <!-- Company Overview -->
+    <div class="card">
+      <div class="section-label">Company Overview [FROM HUBSPOT]</div>
+      <div class="kv">
+        <div class="kv-label">What They Do</div>
+        <div class="kv-value">HVAC contractor based in Salem, OR. 125 employees suggests a well-established mid-market company — likely residential and commercial, possibly multi-trade. [NO WEB DATA — confirm full service scope on Week 0]</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">Address</div>
+        <div class="kv-value">1360 Tandem Ave NE, Salem, OR</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">Website</div>
+        <div class="kv-value">advantageheatingllc.com [blocked — not scraped]</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">CRM</div>
+        <div class="kv-value"><span class="tag amber">Unknown [CONFIRM — critical at this company size]</span></div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">Team Size</div>
+        <div class="kv-value">125 employees total. CSR count unknown — ask on Week 0. At this size, likely 5+ CSRs and multiple dispatchers.</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">After-Hours</div>
+        <div class="kv-value"><span class="tag amber">Unknown [CONFIRM — likely offers emergency HVAC at this scale]</span></div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">Holding Company</div>
+        <div class="kv-value">Multiple "Owner" contacts in HubSpot (Dan Sommers, Patrick Bluth, Christopher Brow, John Convery) — may be a partnership or holding structure [CONFIRM]</div>
+      </div>
+    </div>
+
+    <!-- Products & Deal -->
+    <div class="card">
+      <div class="section-label">Products Purchased</div>
+      <div class="kv">
+        <div class="kv-label">Products (closed May 21, 2026)</div>
+        <div class="kv-value">
+          <span class="tag green">Responder — 2,000 min/mo ($2,500/mo)</span>
+        </div>
+      </div>
+      <div class="kv" style="margin-top:12px;">
+        <div class="kv-label">Total ARR</div>
+        <div class="kv-value">$30,000/yr</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">Minute Tier</div>
+        <div class="kv-value">2,000 min/mo — larger bucket than standard. Signals higher call volume (~400-600 AI-handled calls/mo expected). Confirm actual volume on Week 0.</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">Deal ID</div>
+        <div class="kv-value">60071977250</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">AE</div>
+        <div class="kv-value">Parker Witte (parker@avoca.ai)</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">IM</div>
+        <div class="kv-value">Isadora Williams (isadora@avoca.ai)</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">Call Data</div>
+        <div class="kv-value"><span class="tag red">No Attention calls found</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contacts -->
+  <div class="card" style="margin-bottom:20px;">
+    <div class="section-label">Key Contacts [FROM HUBSPOT] — Multiple Owners, Clarify POC</div>
+    <div class="grid">
+      <div>
+        <div class="contact-card">
+          <span class="contact-badge"><span class="tag amber">Likely Primary Owner</span></span>
+          <div class="contact-name">Dan Sommers</div>
+          <div class="contact-title">Owner — likely primary decision-maker based on email format</div>
+          <div class="contact-email">dsommers@advantageheatingllc.com</div>
+          <div class="contact-phone">+1 503-931-4449</div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-name">Brandon Sommers</div>
+          <div class="contact-title">Partner (related to Dan — likely family business)</div>
+          <div class="contact-email">brandon@advantageheatingllc.com</div>
+        </div>
+        <div class="contact-card">
+          <span class="contact-badge"><span class="tag green">Potential Impl. POC</span></span>
+          <div class="contact-name">Byron Kephart</div>
+          <div class="contact-title">Office Manager — most likely day-to-day onboarding owner</div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-name">Lacey Knowles</div>
+          <div class="contact-title">VP — may be involved in implementation decisions</div>
+        </div>
+      </div>
+      <div>
+        <div class="contact-card">
+          <div class="contact-name">Brandon Baird</div>
+          <div class="contact-title">Contact (role unclear)</div>
+          <div class="contact-email">bbaird@advantageheatingllc.com</div>
+          <div class="contact-phone">503-393-5315</div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-name">Christopher Brow</div>
+          <div class="contact-title">Owner</div>
+          <div class="contact-email">chris@advantageheatingllc.com</div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-name">Patrick Bluth</div>
+          <div class="contact-title">Business Owner</div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-name">Boone Morris</div>
+          <div class="contact-title">Marketing — may own website/phone system decisions</div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-name">John Convery</div>
+          <div class="contact-title">Owner-Operator</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Week 0 Discovery -->
+  <div class="card" style="margin-bottom:20px;">
+    <div class="section-label">⚡ Week 0 Critical Discovery — This Account Has More Unknowns Than Usual</div>
+    <div class="grid">
+      <div>
+        <div style="font-size:12px; font-weight:700; color:#374151; margin-bottom:8px;">SETUP &amp; TECHNICAL</div>
+        <ul class="clean">
+          <li>What CRM? (ServiceTitan is likely at this size — confirm)</li>
+          <li>Do you use capacity planning? (ACP or ADCAP?)</li>
+          <li>What phone system?</li>
+          <li>How many business units / locations?</li>
+          <li>How many CSRs answer phones?</li>
+          <li>Who will be the day-to-day implementation POC?</li>
+        </ul>
+      </div>
+      <div>
+        <div style="font-size:12px; font-weight:700; color:#374151; margin-bottom:8px;">BUSINESS &amp; SERVICES</div>
+        <ul class="clean">
+          <li>What services do you provide? Residential only or commercial too?</li>
+          <li>Do you have a maintenance membership plan?</li>
+          <li>What are your business hours and live rep hours?</li>
+          <li>Do you offer 24/7 emergency HVAC?</li>
+          <li>Do you have dispatch fees or membership rates?</li>
+          <li>Why did you purchase Avoca? (AE's notes were not in Attention calls)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services Placeholder -->
+  <div class="card" style="margin-bottom:20px;">
+    <div class="section-label">Services [DEFAULT — Confirm Everything on Week 0]</div>
+    <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:10px;">
+      <div>
+        <div style="font-size:12px; font-weight:700; color:#374151; margin-bottom:6px;">LIKELY PROVIDED (HVAC defaults)</div>
+        <ul class="clean">
+          <li>AC Repair [DEFAULT]</li>
+          <li>AC Install / Replace [DEFAULT]</li>
+          <li>Heating Repair [DEFAULT]</li>
+          <li>Heating Install / Replace [DEFAULT]</li>
+          <li>AC Tune-Up / Maintenance [DEFAULT]</li>
+          <li>Heating Tune-Up / Maintenance [DEFAULT]</li>
+          <li>Emergency HVAC [DEFAULT — confirm 24/7?]</li>
+          <li>Heat Pump [DEFAULT — confirm]</li>
+          <li>Indoor Air Quality [DEFAULT — confirm]</li>
+        </ul>
+      </div>
+      <div>
+        <div style="font-size:12px; font-weight:700; color:#374151; margin-bottom:6px;">POSSIBLE AT THIS SIZE</div>
+        <ul class="clean">
+          <li>Commercial HVAC [CONFIRM]</li>
+          <li>Duct Cleaning [CONFIRM]</li>
+          <li>Mini-Split [CONFIRM]</li>
+          <li>Thermostat Install [CONFIRM]</li>
+          <li>Maintenance Plan / Membership [CONFIRM — likely]</li>
+          <li>Free Estimate [CONFIRM]</li>
+        </ul>
+      </div>
+      <div>
+        <div style="font-size:12px; font-weight:700; color:#374151; margin-bottom:6px;">LIKELY NOT PROVIDED</div>
+        <ul class="clean">
+          <li>Roofing, Plumbing, Electrical [DEFAULT: no]</li>
+          <li>New construction [CONFIRM]</li>
+          <li>Pool/Spa [DEFAULT: no]</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Risks -->
+  <div class="card" style="margin-bottom:20px;">
+    <div class="section-label">Risks &amp; Watch Items</div>
+    <div class="risk-item">⚠️ <strong>Multiple owner contacts — risk of conflicting directions.</strong> Dan Sommers, Patrick Bluth, Christopher Brow, Brandon Sommers, and John Convery are all listed as owners/partners. Identify the single decision-maker and single implementation POC before proceeding.</div>
+    <div class="risk-item amber">CRM unknown — at 125 employees this is likely ServiceTitan or a comparable platform with capacity planning. If capacity planning is not set up correctly, Avoca will overbook. Confirm before any booking goes live.</div>
+    <div class="risk-item amber">2,000 min/mo tier suggests high call volume. If this is a multi-location operation, there may be multiple BUs and routing rules that need to be built out before go-live. Larger config scope than typical SMB.</div>
+    <div class="risk-item amber">No call data, no web data — Isadora goes into Week 0 blind. Parker (AE) should brief Isadora on why they purchased and what the customer expectations are before the Week 0 call.</div>
+    <div class="risk-item green">$30K ARR — meaningful account. Multiple owners present (family business vibe). If it's a partnership, strong internal champion is likely. Confirm who owns technology decisions.</div>
+  </div>
+
+  <!-- Implementation Notes -->
+  <div class="grid">
+    <div class="card">
+      <div class="section-label">Implementation Notes</div>
+      <ul class="clean">
+        <li>Parker Witte (AE) must brief Isadora before Week 0 — no call data available to reconstruct sales context</li>
+        <li>Identify single implementation POC early — Byron Kephart (Office Manager) is most likely candidate</li>
+        <li>Confirm CRM before any setup begins — if ServiceTitan, verify capacity planning is in place</li>
+        <li>2,000 min/mo bucket: expect higher AI call volume than standard — confirm actual monthly inbound count</li>
+        <li>If multi-location or multi-BU, plan for separate configuration per BU</li>
+        <li>At 125 employees, this customer likely has existing workflows and scripts — get them upfront, don't build from scratch</li>
+        <li>Confirm whether "Advantage Heating" operates as LLC or has a DBA consumer-facing brand name</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="section-label">Avoca Team &amp; IDs</div>
+      <div class="kv">
+        <div class="kv-label">Implementation Manager</div>
+        <div class="kv-value">Isadora Williams — isadora@avoca.ai</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">AE</div>
+        <div class="kv-value">Parker Witte — parker@avoca.ai</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">HubSpot Company</div>
+        <div class="kv-value">32420959585</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">HubSpot Deal</div>
+        <div class="kv-value">60071977250</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">Data Sources</div>
+        <div class="kv-value">HubSpot ✓ | Attention Calls: none found | Slack: no relevant results | Web: blocked</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">Avoca Customer Success · Generated June 19, 2026 · advantage_heating</div>
+</body>
+</html>

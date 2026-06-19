@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bealing Roofing &amp; Exteriors — Onboarding Brief</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f6fa; color: #1a1a2e; line-height: 1.6; }
+  .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 32px 40px; }
+  .header-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
+  .company-name { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+  .badge { display: inline-block; background: #10b981; color: white; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 20px; letter-spacing: 0.5px; text-transform: uppercase; }
+  .badge.amber { background: #f59e0b; color: #1a1a2e; }
+  .header-meta { font-size: 13px; color: #94a3b8; margin-top: 6px; }
+  .header-meta span { margin-right: 20px; }
+  .content { max-width: 1100px; margin: 0 auto; padding: 32px 24px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .card { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .section-label { font-size: 10px; font-weight: 700; color: #6b7280; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid #f0f0f0; }
+  .kv { margin-bottom: 10px; }
+  .kv-label { font-size: 11px; color: #6b7280; font-weight: 600; margin-bottom: 2px; }
+  .kv-value { font-size: 14px; color: #1a1a2e; font-weight: 500; }
+  .tag { display: inline-block; background: #eff6ff; color: #1d4ed8; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px; margin: 2px; }
+  .tag.green { background: #ecfdf5; color: #065f46; }
+  .tag.amber { background: #fffbeb; color: #92400e; }
+  .tag.red { background: #fef2f2; color: #991b1b; }
+  .tag.purple { background: #f5f3ff; color: #5b21b6; }
+  .contact-card { border: 1px solid #e5e7eb; border-radius: 8px; padding: 14px; margin-bottom: 10px; }
+  .contact-name { font-weight: 700; font-size: 14px; color: #1a1a2e; }
+  .contact-title { font-size: 12px; color: #6b7280; margin-bottom: 6px; }
+  .contact-email { font-size: 12px; color: #2563eb; font-family: monospace; }
+  .contact-phone { font-size: 12px; color: #374151; }
+  .contact-badge { float: right; }
+  .risk-item { border-left: 3px solid #ef4444; padding: 10px 14px; background: #fef2f2; border-radius: 0 6px 6px 0; margin-bottom: 8px; font-size: 13px; }
+  .risk-item.amber { border-color: #f59e0b; background: #fffbeb; }
+  .risk-item.green { border-color: #10b981; background: #ecfdf5; }
+  .metric-box { text-align: center; padding: 16px; border: 1px solid #e5e7eb; border-radius: 8px; }
+  .metric-number { font-size: 28px; font-weight: 800; color: #1d4ed8; }
+  .metric-label { font-size: 11px; color: #6b7280; margin-top: 2px; }
+  ul.clean { list-style: none; padding: 0; }
+  ul.clean li { padding: 4px 0; font-size: 13px; color: #374151; border-bottom: 1px solid #f9f9f9; }
+  ul.clean li:before { content: "→ "; color: #9ca3af; }
+  .alert { background: #fef3c7; border: 1px solid #fbbf24; border-radius: 8px; padding: 12px 16px; font-size: 13px; color: #92400e; margin-bottom: 16px; }
+  .alert strong { display: block; margin-bottom: 4px; }
+  .alert.red { background: #fef2f2; border-color: #fca5a5; color: #991b1b; }
+  .alert.blue { background: #eff6ff; border-color: #93c5fd; color: #1e40af; }
+  .footer { text-align: center; color: #9ca3af; font-size: 12px; padding: 24px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-top">
+    <div class="company-name">Bealing Roofing &amp; Exteriors</div>
+    <span class="badge">New Customer</span>
+  </div>
+  <div class="header-meta">
+    <span>📍 Hanover, PA (717-634-3355)</span>
+    <span>🏢 Canopy Serve HoldCo</span>
+    <span>🔧 Leap → ServiceTitan (transitioning)</span>
+    <span>📋 HubSpot ID: 44384775850</span>
+    <span>Generated: June 19, 2026</span>
+  </div>
+</div>
+
+<div class="content">
+
+  <div class="alert red">
+    <strong>⚠️ BLOCKER: No Economic Buyer tagged on deal</strong>
+    HubSpot flagged this on June 10. Andy Bealing appears to be the decision-maker but is not formally tagged. AE must add Economic Buyer contact before IM handoff or project stays in Implementation Scoping.
+  </div>
+
+  <div class="alert blue">
+    <strong>ℹ️ CRM Transition in Progress — Start Without ST Integration</strong>
+    Customer is on Leap now but moving to ServiceTitan in ~2 months. Carmen Chan built V1 bot (ba518b8f) on June 16 with no CRM integration. Plan: launch on overflow + after-hours (no booking) → migrate to ST booking once live on ST.
+  </div>
+
+  <!-- Key Stats -->
+  <div class="grid-3">
+    <div class="metric-box">
+      <div class="metric-number">$18K</div>
+      <div class="metric-label">ARR — Responder</div>
+    </div>
+    <div class="metric-box">
+      <div class="metric-number">~1,500</div>
+      <div class="metric-label">Inbound calls/month</div>
+    </div>
+    <div class="metric-box">
+      <div class="metric-number">160+</div>
+      <div class="metric-label">Missed calls/month (business hours)</div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <!-- Company Overview -->
+    <div class="card">
+      <div class="section-label">Company Overview</div>
+      <div class="kv">
+        <div class="kv-label">What They Do</div>
+        <div class="kv-value">Residential roofing (reroof &amp; repair), gutters, siding, chimney repairs (no new chimneys), attic insulation. Notable: more chimneys than any other Avoca customer. Customer base is primarily 50+ homeowners and retirees.</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">HoldCo</div>
+        <div class="kv-value">Canopy Serve — same holding company as Adam Vaillancourt Roofing &amp; Batterbee. Rich Manney (rich.manney@canopyserve.com) is the Canopy-side consultant involved in implementation.</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">Team Size</div>
+        <div class="kv-value">6 sales reps; 1 main CSR (Ashley); Jordan Roscoe as backup; production team as further backup</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">CRM</div>
+        <div class="kv-value">Leap (current) → ServiceTitan (in ~2 months). Wisconsin Canopy brand already on ST with capacity planning.</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">Phone System</div>
+        <div class="kv-value">RingCentral — export call data from RC for Avoca setup</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">After-Hours</div>
+        <div class="kv-value">No emergency service after hours. Ashley and Jordan try to answer if available. AI will handle overflow + after-hours — book 2 business days out for weekend/after-hours calls.</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">Speed-to-Lead</div>
+        <div class="kv-value">iMessaging service in use for instant text/email follow-up on web forms</div>
+      </div>
+    </div>
+
+    <!-- Products & Deal -->
+    <div class="card">
+      <div class="section-label">Products Purchased</div>
+      <div class="kv">
+        <div class="kv-label">Products (closed Jun 10, 2026)</div>
+        <div class="kv-value">
+          <span class="tag green">Responder — 1,000 min/mo ($1,500/mo)</span>
+        </div>
+      </div>
+      <div class="kv" style="margin-top:12px;">
+        <div class="kv-label">Deal ID</div>
+        <div class="kv-value">61024665663</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">AE</div>
+        <div class="kv-value">Jeremy Goldstein (jeremy@avoca.ai)</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">IM</div>
+        <div class="kv-value">Sissi Li Zhou (sissi@avoca.ai)</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">AI Assistant (Bot V1)</div>
+        <div class="kv-value">ba518b8f-87bb-495b-95d3-60f6fd1ae2d0 — built by Carmen Chan on Jun 16; name "Sarah"; no CRM integration yet; bot configs changed Jun 17, 18, 19</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">Call Data Source</div>
+        <div class="kv-value">1 Attention call analyzed (Jun 5, 2026 — 59min): Jeremy Goldstein, Sebastian Tsai, Andy Bealing, Jordan Roscoe, Rich Manney (Canopy)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contacts -->
+  <div class="card" style="margin-bottom:20px;">
+    <div class="section-label">Key Contacts</div>
+    <div class="grid">
+      <div>
+        <div class="contact-card">
+          <span class="contact-badge"><span class="tag amber">Economic Buyer</span></span>
+          <div class="contact-name">Andy Bealing</div>
+          <div class="contact-title">Owner / Decision-Maker</div>
+          <div class="contact-email">andy@bealingroofing.com</div>
+          <div class="contact-phone">717-634-3355</div>
+        </div>
+        <div class="contact-card">
+          <span class="contact-badge"><span class="tag green">Impl. POC</span></span>
+          <div class="contact-name">Jordan Roscoe</div>
+          <div class="contact-title">Director of Sales &amp; Marketing — tech-savvy, likely day-to-day onboarding owner</div>
+          <div class="contact-email">jroscoe@bealingroofing.com</div>
+          <div class="contact-phone">717-634-3355</div>
+        </div>
+      </div>
+      <div>
+        <div class="contact-card">
+          <div class="contact-name">Rich Manney</div>
+          <div class="contact-title">Canopy Serve Consultant — involved in setup</div>
+          <div class="contact-email">rich.manney@canopyserve.com</div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-name">Ashley</div>
+          <div class="contact-title">Main CSR — primary phone handler, AI will relieve overflow</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <!-- Call Volume -->
+    <div class="card">
+      <div class="section-label">Call Volume &amp; Performance (rolling 12mo)</div>
+      <div class="grid-3" style="gap:12px; margin-bottom:0;">
+        <div class="metric-box">
+          <div class="metric-number" style="font-size:22px;">18K</div>
+          <div class="metric-label">Inbound calls/yr</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-number" style="font-size:22px;">160</div>
+          <div class="metric-label">Missed/mo (biz hours)</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-number" style="font-size:22px;">34</div>
+          <div class="metric-label">Missed/mo (after-hours)</div>
+        </div>
+      </div>
+      <div style="margin-top:12px; font-size:12px; color:#6b7280;">~14K min/yr of sales-qualified calls (&gt;2 min). Missing ~25.7% of inbound during business hours.</div>
+    </div>
+
+    <!-- Why They Purchased -->
+    <div class="card">
+      <div class="section-label">Why They Purchased / Key Goals</div>
+      <ul class="clean">
+        <li>Stop missing calls during business hours and after hours</li>
+        <li>Ashley overwhelmed — AI handles overflow so she isn't single point of failure</li>
+        <li>Capture after-hours leads (34/mo currently lost)</li>
+        <li>Get Avoca data and reporting on call performance</li>
+        <li>Customize AI voice — staff will vote on preferred option</li>
+        <li>Phase 2: Full booking via ServiceTitan once ST migration complete</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="card" style="margin-bottom:20px;">
+    <div class="section-label">Services [FROM CALLS] — Confirm on Week 0</div>
+    <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:10px;">
+      <div>
+        <div style="font-size:12px; font-weight:700; color:#374151; margin-bottom:6px;">ROOFING</div>
+        <ul class="clean">
+          <li>Roof Replacement (Reroof)</li>
+          <li>Roof Repair</li>
+          <li>Roof Estimate (Free)</li>
+        </ul>
+      </div>
+      <div>
+        <div style="font-size:12px; font-weight:700; color:#374151; margin-bottom:6px;">EXTERIORS</div>
+        <ul class="clean">
+          <li>Gutter Installation</li>
+          <li>Gutter Repair</li>
+          <li>Siding Installation</li>
+          <li>Siding Repair</li>
+          <li>Chimney Repair (no new chimneys)</li>
+          <li>Attic Insulation</li>
+        </ul>
+      </div>
+      <div>
+        <div style="font-size:12px; font-weight:700; color:#374151; margin-bottom:6px;">NOT PROVIDED</div>
+        <ul class="clean">
+          <li>New chimney construction</li>
+          <li>Emergency after-hours service</li>
+          <li>Commercial work [CONFIRM]</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Concerns & Config -->
+  <div class="grid">
+    <div class="card">
+      <div class="section-label">Key Concerns &amp; What to Avoid</div>
+      <ul class="clean">
+        <li><strong>Robotic AI voice</strong> — older customers (50+/retirees) will hang up; voice selection is critical</li>
+        <li><strong>Rigid scripting</strong> — must not lose appointments because script is inflexible</li>
+        <li><strong>Overbooking</strong> — before ST is live, NO capacity booking; AI captures leads only</li>
+        <li><strong>Sales manager assignment</strong> — AI should NOT auto-assign; manager routes leads to best-fit rep</li>
+        <li>AI should be trained like a new hire — regular call review and script refinement</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Agent Config Recommendations [FROM CALLS]</div>
+      <ul class="clean">
+        <li><strong>Booking type:</strong> Lead capture only until on ServiceTitan — no time slot booking yet</li>
+        <li><strong>After-hours:</strong> Take message + capture lead, book 2 business days out; no emergency service</li>
+        <li><strong>AI disclosure:</strong> After introduction (default)</li>
+        <li><strong>Emergency override:</strong> Disabled — no emergency service offered</li>
+        <li><strong>Transfer:</strong> Overflow to Ashley, then Jordan, then production team</li>
+        <li><strong>Voice:</strong> Staff voting — present multiple options on Week 0</li>
+        <li><strong>Capacity:</strong> None on Leap → ADCAP once on ServiceTitan</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- What They're Excited About -->
+  <div class="card" style="margin-bottom:20px;">
+    <div class="section-label">What They're Excited About</div>
+    <div style="display:flex; flex-wrap:wrap; gap:8px; padding-top:4px;">
+      <span class="tag green">Reducing missed calls</span>
+      <span class="tag green">Avoca data &amp; reporting</span>
+      <span class="tag green">AI voice customization</span>
+      <span class="tag green">Speed to Lead potential</span>
+      <span class="tag green">After-hours lead capture (34/mo)</span>
+      <span class="tag">ST integration (Phase 2)</span>
+      <span class="tag">Full appointment booking on ST</span>
+    </div>
+  </div>
+
+  <!-- Risks -->
+  <div class="card" style="margin-bottom:20px;">
+    <div class="section-label">Risks &amp; Watch Items</div>
+    <div class="risk-item">⚠️ <strong>BLOCKER: No Economic Buyer tagged.</strong> Andy Bealing is the buyer but not formally associated on the deal. AE (Jeremy) must tag before IM project can move to S2 (To Be Scheduled).</div>
+    <div class="risk-item amber">CRM transition to ServiceTitan in ~2 months — Phase 1 launch is lead capture only (no booking). Must clearly set expectations with customer on what AI does in Phase 1 vs Phase 2.</div>
+    <div class="risk-item amber">Older customer base (50+) extremely sensitive to robotic AI. Voice selection and natural language tuning must happen before go-live. Do NOT launch with default voice.</div>
+    <div class="risk-item amber">Canopy HoldCo relationship — Rich Manney (Canopy) is a stakeholder. Sissi should clarify whether Rich has authority to approve configs or if Jordan/Andy are sole sign-offs.</div>
+    <div class="risk-item amber">RingCentral data export needed for Avoca setup — confirm Ashley or Jordan owns this task.</div>
+    <div class="risk-item green">Bot V1 already built by Carmen Chan — faster path to go-live. Sissi should review and validate before Week 0.</div>
+  </div>
+
+  <!-- Implementation Notes -->
+  <div class="grid">
+    <div class="card">
+      <div class="section-label">Implementation Notes</div>
+      <ul class="clean">
+        <li>Phase 1 (now): Launch on Leap — lead capture only, overflow + after-hours, no booking</li>
+        <li>Phase 2 (post-ST migration, ~2 months): Full ST integration + appointment booking</li>
+        <li>Export call history from RingCentral for Avoca setup (Jordan or Ashley owns)</li>
+        <li>Bot V1 (ba518b8f) built by Carmen — review for accuracy before first call with customer</li>
+        <li>Book 2 business days out for after-hours/weekend lead callbacks</li>
+        <li>AI should route non-sales calls (billing, complaints, existing jobs) to production team</li>
+        <li>Staff should vote on AI voice — present 3 options on Week 0 call</li>
+        <li>Wisconsin Canopy brand uses ADCAP — use that team as reference for ST config later</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="section-label">Avoca Team &amp; IDs</div>
+      <div class="kv">
+        <div class="kv-label">Implementation Manager</div>
+        <div class="kv-value">Sissi Li Zhou — sissi@avoca.ai</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">AE</div>
+        <div class="kv-value">Jeremy Goldstein — jeremy@avoca.ai</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">AI Assistant ID</div>
+        <div class="kv-value">ba518b8f-87bb-495b-95d3-60f6fd1ae2d0</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">HubSpot Company</div>
+        <div class="kv-value">44384775850</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">HubSpot Deal</div>
+        <div class="kv-value">61024665663</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">Data Sources</div>
+        <div class="kv-value">HubSpot ✓ | Attention Calls ✓ (1 call, 59min) | Slack ✓ | Web: blocked</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">Avoca Customer Success · Generated June 19, 2026 · bealing_roofing_exteriors</div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "avoca-onboarding-reports",
+  "version": "1.0.0",
+  "description": "Avoca CS onboarding briefs",
+  "scripts": {
+    "start": "npx serve@14 . -l ${PORT:-3000} --no-clipboard"
+  }
+}
