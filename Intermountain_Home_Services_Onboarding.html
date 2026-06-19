@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intermountain Home Services — Onboarding Brief</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f6fa; color: #1a1a2e; line-height: 1.6; }
+  .header { background: linear-gradient(135deg, #065f46 0%, #047857 100%); color: white; padding: 32px 40px; }
+  .header-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
+  .company-name { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 20px; letter-spacing: 0.5px; text-transform: uppercase; }
+  .badge.new { background: #10b981; color: white; }
+  .badge.pilot { background: #3b82f6; color: white; }
+  .badge.amber { background: #f59e0b; color: #1a1a2e; }
+  .header-meta { font-size: 13px; color: #a7f3d0; margin-top: 6px; }
+  .header-meta span { margin-right: 20px; }
+  .content { max-width: 1100px; margin: 0 auto; padding: 32px 24px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .grid-4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+  .card { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .card-full { grid-column: 1 / -1; }
+  .section-label { font-size: 10px; font-weight: 700; color: #6b7280; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid #f0f0f0; }
+  .kv { margin-bottom: 10px; }
+  .kv-label { font-size: 11px; color: #6b7280; font-weight: 600; margin-bottom: 2px; }
+  .kv-value { font-size: 14px; color: #1a1a2e; font-weight: 500; }
+  .tag { display: inline-block; background: #eff6ff; color: #1d4ed8; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px; margin: 2px; }
+  .tag.green { background: #ecfdf5; color: #065f46; }
+  .tag.amber { background: #fffbeb; color: #92400e; }
+  .tag.red { background: #fef2f2; color: #991b1b; }
+  .tag.purple { background: #f5f3ff; color: #5b21b6; }
+  .contact-card { border: 1px solid #e5e7eb; border-radius: 8px; padding: 14px; margin-bottom: 10px; }
+  .contact-name { font-weight: 700; font-size: 14px; color: #1a1a2e; }
+  .contact-title { font-size: 12px; color: #6b7280; margin-bottom: 6px; }
+  .contact-email { font-size: 12px; color: #2563eb; font-family: monospace; }
+  .contact-phone { font-size: 12px; color: #374151; }
+  .contact-badge { float: right; }
+  .risk-item { border-left: 3px solid #ef4444; padding: 10px 14px; background: #fef2f2; border-radius: 0 6px 6px 0; margin-bottom: 8px; font-size: 13px; }
+  .risk-item.amber { border-color: #f59e0b; background: #fffbeb; }
+  .risk-item.green { border-color: #10b981; background: #ecfdf5; }
+  .metric-box { text-align: center; padding: 16px; border: 1px solid #e5e7eb; border-radius: 8px; }
+  .metric-number { font-size: 28px; font-weight: 800; color: #065f46; }
+  .metric-label { font-size: 11px; color: #6b7280; margin-top: 2px; }
+  ul.clean { list-style: none; padding: 0; }
+  ul.clean li { padding: 4px 0; font-size: 13px; color: #374151; border-bottom: 1px solid #f9f9f9; }
+  ul.clean li:before { content: "→ "; color: #9ca3af; }
+  .alert { background: #fef3c7; border: 1px solid #fbbf24; border-radius: 8px; padding: 12px 16px; font-size: 13px; color: #92400e; margin-bottom: 16px; }
+  .alert strong { display: block; margin-bottom: 4px; }
+  .alert.red { background: #fef2f2; border-color: #fca5a5; color: #991b1b; }
+  .alert.blue { background: #eff6ff; border-color: #93c5fd; color: #1e3a8a; }
+  .alert.green { background: #ecfdf5; border-color: #6ee7b7; color: #065f46; }
+  .brand-pill { display: inline-block; background: #f3f4f6; border: 1px solid #e5e7eb; border-radius: 6px; padding: 6px 12px; margin: 4px; font-size: 12px; font-weight: 600; color: #374151; }
+  .footer { text-align: center; color: #9ca3af; font-size: 12px; padding: 24px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-top">
+    <div class="company-name">Intermountain Home Services</div>
+    <div>
+      <span class="badge new">New Customer</span>&nbsp;
+      <span class="badge pilot">Pilot — 2 Brands</span>
+    </div>
+  </div>
+  <div class="header-meta">
+    <span>📍 Salt Lake City, UT (801-297-1654)</span>
+    <span>🏢 7-Brand HoldCo (HVAC + Plumbing)</span>
+    <span>🔧 ServiceTitan Enterprise Hub</span>
+    <span>📋 HubSpot ID: 55554350259</span>
+    <span>Generated: June 11, 2026</span>
+  </div>
+</div>
+
+<div class="content">
+
+  <div class="alert blue">
+    <strong>🎯 High-Value Pilot: ~$1M ARR Opportunity</strong>
+    Intermountain is one of Broccoli's largest clients. This 2-brand pilot is designed to prove Avoca, then replace Broccoli across all 7 brands. Parker's note: "We have a pilot with one of Broccoli's largest clients to fully rip and replace. ~$1M ARR on the line."
+  </div>
+
+  <div class="alert" style="background:#fffbeb; border-color:#fbbf24; color:#92400e;">
+    <strong>⚡ Summer Peak Sensitivity</strong>
+    Sean flagged concern about disruption during peak season (May–July). We're now in June — onboard carefully, test before go-live, minimize operational noise.
+  </div>
+
+  <!-- Key Stats -->
+  <div class="grid-4">
+    <div class="metric-box">
+      <div class="metric-number">7</div>
+      <div class="metric-label">Total brands in holdco</div>
+    </div>
+    <div class="metric-box">
+      <div class="metric-number">2</div>
+      <div class="metric-label">Brands in pilot</div>
+    </div>
+    <div class="metric-box">
+      <div class="metric-number">39K+</div>
+      <div class="metric-label">Inbound calls YTD (2025)</div>
+    </div>
+    <div class="metric-box">
+      <div class="metric-number">~$1M</div>
+      <div class="metric-label">ARR potential (all brands)</div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <!-- Company Overview -->
+    <div class="card">
+      <div class="section-label">Company Overview</div>
+      <div class="kv">
+        <div class="kv-label">What They Do</div>
+        <div class="kv-value">Residential HVAC and plumbing services. 7 brands across Utah (SLC/St. George) and Idaho (Boise). Centralized call center handles SLC-area brands.</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">Employee Count</div>
+        <div class="kv-value">~90 employees</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">CRM</div>
+        <div class="kv-value">ServiceTitan Enterprise Hub — each brand has its own tenant; some brands use ACP, some don't</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">Current AI/Overflow Solution</div>
+        <div class="kv-value">Broccoli (6 of 7 brands, after-hours + overflow) + offshore Philippines team; previously Nexa (canceled)</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">Communication Preference</div>
+        <div class="kv-value">Microsoft Teams for meetings</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">Primary Services</div>
+        <div class="kv-value">HVAC (install, repair, tune-up), Plumbing — residential focus, some commercial</div>
+      </div>
+    </div>
+
+    <!-- Products & Deal -->
+    <div class="card">
+      <div class="section-label">Products Purchased</div>
+      <div class="kv">
+        <div class="kv-label">Products (Pilot Deal)</div>
+        <div class="kv-value">
+          <span class="tag green">Responder</span>
+          <span class="tag green">Speed to Lead</span>
+          <span class="tag green">Outbound Campaign</span>
+        </div>
+      </div>
+      <div class="kv" style="margin-top:12px;">
+        <div class="kv-label">Deal Value</div>
+        <div class="kv-value">$1.00 placeholder (pilot pricing — full pricing after pilot converts)</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">Deal Closed</div>
+        <div class="kv-value">June 4, 2026</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">Deal</div>
+        <div class="kv-value">Intermountain Home Services Pilot - 2026 - 2 Brands</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">AE</div>
+        <div class="kv-value">Parker Witte (parker@avoca.ai)</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">IM</div>
+        <div class="kv-value">Jillian Gallagher (jillian@avoca.ai)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Brands -->
+  <div class="card" style="margin-bottom:20px;">
+    <div class="section-label">Brand Footprint</div>
+    <div style="margin-bottom:12px;">
+      <strong style="font-size:13px; color:#374151;">SLC / St. George (centralized call center):</strong><br>
+      <span class="brand-pill">Brand 1 (SLC)</span>
+      <span class="brand-pill">Brand 2 (SLC)</span>
+      <span class="brand-pill">Brand 3 (SLC)</span>
+      <span class="brand-pill">Brand 4 (St. George)</span>
+      <span class="brand-pill">Brand 5 (SLC)</span>
+    </div>
+    <div>
+      <strong style="font-size:13px; color:#374151;">Boise (separate call handling):</strong><br>
+      <span class="brand-pill">Brand 6 (Boise)</span>
+      <span class="brand-pill">Brand 7 (Boise)</span>
+    </div>
+    <div style="margin-top:12px; font-size:12px; color:#6b7280;">Pilot is 2 brands. Identify which 2 brands with Sean/team and configure each as separate ST tenant in Avoca. ACP usage varies by brand — confirm per-tenant.</div>
+  </div>
+
+  <!-- Contacts -->
+  <div class="card" style="margin-bottom:20px;">
+    <div class="section-label">Key Contacts</div>
+    <div class="grid">
+      <div>
+        <div class="contact-card">
+          <span class="contact-badge"><span class="tag green">CEO</span><span class="tag amber">Economic Buyer</span><span class="tag">Primary POC</span></span>
+          <div class="contact-name">Sean Kurdoglu</div>
+          <div class="contact-title">Chief Executive Officer</div>
+          <div class="contact-email">skurdoglu@intermountainhs.com</div>
+          <div class="contact-phone">(801) 297-1654</div>
+        </div>
+        <div class="contact-card">
+          <span class="contact-badge"><span class="tag purple">CFO</span></span>
+          <div class="contact-name">Jay Clement</div>
+          <div class="contact-title">Chief Financial Officer</div>
+          <div class="contact-email">jclement@intermountainhs.com</div>
+          <div class="contact-phone">+1 801-297-1654</div>
+        </div>
+      </div>
+      <div>
+        <div class="contact-card">
+          <div class="contact-name">Brandon Schramm</div>
+          <div class="contact-title">Operations (title TBC)</div>
+          <div class="contact-email">bschramm@intermountainhs.com</div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-name">P. Speck / mpascale</div>
+          <div class="contact-title">Additional stakeholders — appeared on call invites</div>
+          <div class="contact-email">pspeck@intermountainhs.com</div>
+          <div class="contact-email">mpascale@intermountainhs.com</div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-name">Lynn</div>
+          <div class="contact-title">Stakeholder (first name only — confirm full name and email with Sean)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <!-- Why They Purchased -->
+    <div class="card">
+      <div class="section-label">Why They Purchased &amp; Key Goals</div>
+      <ul class="clean">
+        <li>Replace Broccoli on after-hours + overflow — starting with 2 brands as proof of concept</li>
+        <li>Eliminate hold times — consistent, reliable call handling at scale</li>
+        <li>Reduce offshore Philippines overhead — move to AI-first model</li>
+        <li>Customizable call flows per brand — Broccoli was rigid</li>
+        <li>Multi-entity reporting — one view across all brands vs fragmented data</li>
+        <li>Membership handling — quote member vs non-member dispatch rates</li>
+        <li>Side-by-side 90-day pilot vs Broccoli to prove ROI</li>
+        <li>Script change turnaround: wants minor updates within 48 hours via Avoca team</li>
+      </ul>
+    </div>
+
+    <!-- What They're Excited About -->
+    <div class="card">
+      <div class="section-label">What They're Excited About</div>
+      <ul class="clean">
+        <li>Consistent, no-hold-time call handling during peak summer volume</li>
+        <li>Customizable AI logic (emergency triage, member rates, ACP integration)</li>
+        <li>Multi-entity reporting dashboard across all brands</li>
+        <li>Cost reduction vs Broccoli + Philippines offshore model</li>
+        <li>Emergency call handling — AI clarifies, prioritizes accordingly</li>
+        <li>Scalability: pilot converts → roll out to remaining 5 brands</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid">
+    <!-- Technical Constraints -->
+    <div class="card">
+      <div class="section-label">Technical &amp; Operational Details</div>
+      <ul class="clean">
+        <li>ST Enterprise Hub — each brand = own tenant; confirm which 2 pilot brands</li>
+        <li>ACP: some brands use Automatic Capacity Planning, some don't — per tenant</li>
+        <li>Memberships: ST identifies members; AI needs to quote member dispatch rates</li>
+        <li>Emergency handling: custom logic to clarify emergency type and prioritize same-day</li>
+        <li>Commercial vs residential: primarily residential; limited commercial — flag commercial calls</li>
+        <li>After-hours first: pilot scope = after-hours + overflow; expand to all calls post-pilot</li>
+        <li>Priority logic: new installs + aged installs get same-day regardless of schedule state</li>
+      </ul>
+    </div>
+
+    <!-- Concerns -->
+    <div class="card">
+      <div class="section-label">Concerns &amp; Want to Avoid</div>
+      <ul class="clean">
+        <li>Operational disruption during peak summer (May–July) — we're in it now</li>
+        <li>Scripting errors during live calls — test thoroughly before go-live</li>
+        <li>High HITL (Human in the Loop) cost — keep transfer rate minimal</li>
+        <li>7-week total onboarding timeline (3-4 week typical + buffer) — don't rush</li>
+        <li>No surprises on billing/pricing at contract conversion after pilot</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Risks -->
+  <div class="card" style="margin-bottom:20px;">
+    <div class="section-label">Risks &amp; Watch Items</div>
+    <div class="risk-item">High-stakes pilot — Broccoli will be watching; any performance issue becomes competitive ammunition. Document everything.</div>
+    <div class="risk-item">Summer peak is NOW (June) — Sean wants kinks worked out before volume spikes. Go-live timing is critical. Prioritize thorough pre-launch testing.</div>
+    <div class="risk-item amber">6 brands still on Broccoli during pilot — if pilot brands struggle, full expansion stalls. First two brands must nail it.</div>
+    <div class="risk-item amber">Multi-tenant config complexity — each ST brand needs own Avoca config. Per-brand ACP and membership logic must be validated separately.</div>
+    <div class="risk-item amber">Lynn and other stakeholders not fully identified — get a full org chart from Sean in kick-off call. Avoid surprises from unknown influencers.</div>
+    <div class="risk-item green">Strong executive buy-in from Sean (CEO directly engaged) — reduces escalation risk if issues are handled proactively</div>
+  </div>
+
+  <!-- Implementation Notes -->
+  <div class="grid">
+    <div class="card">
+      <div class="section-label">Onboarding Priorities (Week 0)</div>
+      <ul class="clean">
+        <li>Confirm which 2 brands are in the pilot scope (Sean to specify)</li>
+        <li>Get ST tenant IDs for both pilot brands</li>
+        <li>Map ACP usage per brand — which brands use ACP, which don't</li>
+        <li>Define emergency call handling logic (what triggers same-day vs next available)</li>
+        <li>Configure membership rate lookup in ST for each brand</li>
+        <li>Set up Microsoft Teams channel for ongoing communication</li>
+        <li>Establish 48-hour script change SLA commitment</li>
+        <li>Define pilot success metrics with Sean before go-live</li>
+        <li>Document Broccoli comparison baseline (booking rate, answer rate)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="section-label">Avoca Team &amp; HubSpot</div>
+      <div class="kv">
+        <div class="kv-label">Implementation Manager</div>
+        <div class="kv-value">Jillian Gallagher — jillian@avoca.ai</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">AE</div>
+        <div class="kv-value">Parker Witte — parker@avoca.ai</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">HubSpot Company</div>
+        <div class="kv-value">Intermountain Home Services</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">HubSpot Deal</div>
+        <div class="kv-value">Intermountain Home Services Pilot - 2026 - 2 Brands</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">Slack Channel</div>
+        <div class="kv-value">#intermountain</div>
+      </div>
+      <div class="kv">
+        <div class="kv-label">Data Sources</div>
+        <div class="kv-value">HubSpot ✓ | Attention Calls ✓ | Slack ✓ | Web: blocked</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">Avoca Customer Success · Generated June 11, 2026 · intermountain_home_services</div>
+</body>
+</html>
