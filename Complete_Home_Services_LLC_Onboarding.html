@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complete Home Services, LLC — Onboarding Brief</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f6fa; color: #1a1a2e; line-height: 1.6; }
+  .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 32px 40px; }
+  .header-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
+  .company-name { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+  .badge { display: inline-block; background: #7c3aed; color: white; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 20px; letter-spacing: 0.5px; text-transform: uppercase; }
+  .header-meta { font-size: 13px; color: #94a3b8; margin-top: 6px; }
+  .header-meta span { margin-right: 20px; }
+  .content { max-width: 1100px; margin: 0 auto; padding: 32px 24px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .grid-4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .card { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .section-label { font-size: 10px; font-weight: 700; color: #6b7280; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid #f0f0f0; }
+  .kv { margin-bottom: 10px; }
+  .kv-label { font-size: 11px; color: #6b7280; font-weight: 600; margin-bottom: 2px; }
+  .kv-value { font-size: 14px; color: #1a1a2e; font-weight: 500; }
+  .tag { display: inline-block; background: #eff6ff; color: #1d4ed8; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px; margin: 2px; }
+  .tag.green { background: #ecfdf5; color: #065f46; }
+  .tag.amber { background: #fffbeb; color: #92400e; }
+  .tag.red { background: #fef2f2; color: #991b1b; }
+  .tag.purple { background: #f5f3ff; color: #5b21b6; }
+  .contact-card { border: 1px solid #e5e7eb; border-radius: 8px; padding: 14px; margin-bottom: 10px; overflow: hidden; }
+  .contact-name { font-weight: 700; font-size: 14px; color: #1a1a2e; }
+  .contact-title { font-size: 12px; color: #6b7280; margin-bottom: 6px; }
+  .contact-email { font-size: 12px; color: #2563eb; font-family: monospace; }
+  .contact-phone { font-size: 12px; color: #374151; margin-top: 2px; }
+  .contact-badge { float: right; }
+  .risk-item { border-left: 3px solid #ef4444; padding: 10px 14px; background: #fef2f2; border-radius: 0 6px 6px 0; margin-bottom: 8px; font-size: 13px; }
+  .risk-item.amber { border-color: #f59e0b; background: #fffbeb; }
+  .risk-item.green { border-color: #10b981; background: #ecfdf5; }
+  .metric-box { text-align: center; padding: 16px; border: 1px solid #e5e7eb; border-radius: 8px; background: white; }
+  .metric-number { font-size: 28px; font-weight: 800; color: #1d4ed8; }
+  .metric-label { font-size: 11px; color: #6b7280; margin-top: 2px; }
+  ul.clean { list-style: none; padding: 0; }
+  ul.clean li { padding: 5px 0; font-size: 13px; color: #374151; border-bottom: 1px solid #f9f9f9; }
+  ul.clean li:before { content: "→ "; color: #9ca3af; }
+  .alert { background: #fef3c7; border: 1px solid #fbbf24; border-radius: 8px; padding: 12px 16px; font-size: 13px; color: #92400e; margin-bottom: 16px; }
+  .alert.red { background: #fef2f2; border-color: #f87171; color: #991b1b; }
+  .alert.purple { background: #f5f3ff; border-color: #a78bfa; color: #5b21b6; }
+  .priority-item { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid #f0f0f0; font-size: 13px; }
+  .priority-num { font-weight: 800; color: #1d4ed8; min-width: 24px; }
+  .excited-tag { display: inline-block; background: #f0fdf4; color: #15803d; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 20px; margin: 3px; border: 1px solid #bbf7d0; }
+  .source-note { font-size: 11px; color: #9ca3af; font-style: italic; margin-top: 8px; }
+  .footer { text-align: center; color: #9ca3af; font-size: 12px; padding: 24px; }
+  .history-tag { display: inline-block; background: #f5f3ff; color: #5b21b6; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px; margin: 2px; border: 1px solid #ddd6fe; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-top">
+    <div class="company-name">Complete Home Services, LLC</div>
+    <span class="badge">Upsell — Existing Customer</span>
+  </div>
+  <div class="header-meta">
+    <span>🏠 Multi-brand Home Services (Neighborly Group)</span>
+    <span>🔧 CRM: ServiceTitan</span>
+    <span>🏷️ Brands: AirServe, Mr. Electric, Mr. Rooter, Glass Doctor</span>
+    <span>📋 Deal: Direct Mail Upsell</span>
+    <span>Generated: June 26, 2026</span>
+  </div>
+</div>
+
+<div class="content">
+
+  <!-- Context Alert -->
+  <div class="alert purple">
+    ℹ️ <strong>Existing Customer Context:</strong> CHS is an existing Avoca customer. They previously deployed Avoca inbound AI across AirServe, Mr. Electric, and Glass Doctor but paused it due to containment/booking rate issues and team resistance. This upsell adds Direct Mail + Outbound SMS + Simple Scheduler. Rebuilding trust is part of the job.
+  </div>
+
+  <!-- Go-Live Urgency -->
+  <div class="alert">
+    ⚡ <strong>Go-Live Urgency: High — Carlos Wants to Move Now</strong> Carlos Suarez (main marketing POC) has onboarding scheduled and wants to start building campaigns immediately. The blocker is TCPA/A2P phone number compliance — outbound SMS cannot launch until approved. Direct Mail can start in parallel.
+  </div>
+
+  <!-- Key Metrics -->
+  <div class="grid-4">
+    <div class="metric-box"><div class="metric-number">$300K</div><div class="metric-label">Deal Value</div></div>
+    <div class="metric-box"><div class="metric-number">$50K</div><div class="metric-label">First Tranche (71,429 pieces @ $0.75)</div></div>
+    <div class="metric-box"><div class="metric-number">4</div><div class="metric-label">Brands</div></div>
+    <div class="metric-box"><div class="metric-number">Multi</div><div class="metric-label">Locations / States</div></div>
+  </div>
+
+  <!-- Deal + Company -->
+  <div class="grid">
+    <div class="card">
+      <div class="section-label">Deal Details</div>
+      <div class="kv"><div class="kv-label">HubSpot Company</div><div class="kv-value">Complete Home Services, LLC</div></div>
+      <div class="kv"><div class="kv-label">HubSpot Deal</div><div class="kv-value">Complete Home Services, LLC - 2026 - Direct Mail Upsell</div></div>
+      <div class="kv"><div class="kv-label">Close Date</div><div class="kv-value">June 10, 2026</div></div>
+      <div class="kv"><div class="kv-label">Deal Value</div><div class="kv-value">$300,001.80</div></div>
+      <div class="kv"><div class="kv-label">Products (This Deal)</div><div class="kv-value">Direct Mail — 71,429 pieces @ $0.75/piece</div></div>
+      <div class="kv"><div class="kv-label">Products (Existing)</div><div class="kv-value">
+        <span class="history-tag">Avoca Inbound (paused)</span>
+        <span class="history-tag">Avoca Outbound</span>
+        <span class="history-tag">Simple Scheduler</span>
+      </div></div>
+      <div class="kv"><div class="kv-label">AE</div><div class="kv-value">Matthew Fine (matt@avoca.ai)</div></div>
+      <div class="kv"><div class="kv-label">IM</div><div class="kv-value">Zach Kurfirst (zach@avoca.ai)</div></div>
+    </div>
+    <div class="card">
+      <div class="section-label">Company Overview [FROM CALLS]</div>
+      <div class="kv"><div class="kv-label">What They Do</div><div class="kv-value">Multi-brand residential home services — HVAC, electrical, plumbing, glass. Operate AirServe, Mr. Electric, Mr. Rooter, and Glass Doctor across multiple states.</div></div>
+      <div class="kv"><div class="kv-label">Holding Company</div><div class="kv-value">Neighborly group — branding compliance required on all campaigns</div></div>
+      <div class="kv"><div class="kv-label">CRM</div><div class="kv-value">ServiceTitan (with Marketing Pro experience)</div></div>
+      <div class="kv"><div class="kv-label">Previous Outbound Tool</div><div class="kv-value">Hatch — migrating to Avoca to consolidate platforms</div></div>
+      <div class="kv"><div class="kv-label">Membership Program</div><div class="kv-value">Yes — 900+ maintenance customers; tune-ups are a core campaign use case</div></div>
+      <div class="kv"><div class="kv-label">Markets Referenced</div><div class="kv-value">Memphis area + multiple states; area codes 256, 423, 205, 334, 615</div></div>
+    </div>
+  </div>
+
+  <!-- Contacts -->
+  <div class="card" style="margin-bottom:20px;">
+    <div class="section-label">Key Contacts</div>
+
+    <div class="contact-card">
+      <span class="contact-badge"><span class="tag green">Economic Buyer</span></span>
+      <div class="contact-name">Lee Downing</div>
+      <div class="contact-title">CEO / Executive Decision-Maker — on Avoca's CAB</div>
+      <div class="contact-email">lee.downing@nblyhub.net</div>
+      <div class="contact-phone">+1 901-299-6059</div>
+    </div>
+
+    <div class="contact-card">
+      <span class="contact-badge"><span class="tag">Operational Lead</span></span>
+      <div class="contact-name">Stacey Pruitt</div>
+      <div class="contact-title">VP of Customer Experience — CSR team owner, implementation gatekeeper</div>
+      <div class="contact-email">stacey.pruitt@nblyhub.net</div>
+      <div class="contact-phone">+1 901-494-7778</div>
+    </div>
+
+    <div class="contact-card">
+      <span class="contact-badge"><span class="tag green">Primary POC (This Deal)</span></span>
+      <div class="contact-name">Carlos Suarez</div>
+      <div class="contact-title">Marketing — sole campaign builder for Direct Mail and Outbound</div>
+      <div class="contact-email">carlos.suarez@nblyhub.net</div>
+    </div>
+
+    <div class="contact-card">
+      <span class="contact-badge"><span class="tag">Technical / Ops</span></span>
+      <div class="contact-name">Cole Rieben</div>
+      <div class="contact-title">Operations / IT — integration and technical implementation lead</div>
+      <div class="contact-email">cole.rieben@nblyhub.net</div>
+    </div>
+
+    <div class="contact-card">
+      <span class="contact-badge"><span class="tag amber">Confirm Role</span></span>
+      <div class="contact-name">Danielle Sullivan</div>
+      <div class="contact-title">Operations — include on technical migration calls</div>
+      <div class="contact-email">danielle.sullivan@nblyhub.net</div>
+    </div>
+
+    <div class="contact-card">
+      <span class="contact-badge"><span class="tag amber">Confirm Role</span></span>
+      <div class="contact-name">Jessica Poole</div>
+      <div class="contact-title">Role unclear — in HubSpot</div>
+      <div class="contact-email">jessica.poole@nblyhub.net</div>
+    </div>
+  </div>
+
+  <!-- Why They Purchased + What They're Excited About -->
+  <div class="grid">
+    <div class="card">
+      <div class="section-label">Why They Purchased / Key Goals [FROM CALLS]</div>
+      <ul class="clean">
+        <li>Make direct mail a "massive channel" — automate and scale across all brands and locations</li>
+        <li>Replace Hatch — consolidate outbound into Avoca to eliminate extra portals for CSRs</li>
+        <li>Automate member tune-up reminders and maintenance scheduling via Outbound SMS</li>
+        <li>Run reactivation, unsold estimate follow-ups, expiring membership, and collections campaigns</li>
+        <li>Reduce CSR manual workload; free staff for higher-value calls</li>
+        <li>Improve speed-to-lead for inbound sources (Angie, Google SA)</li>
+        <li>Simple Scheduler for online booking with dynamic member lookup</li>
+      </ul>
+      <div class="source-note">Primary source: Jun 8, 2026 — "Avoca x CHS Direct Mail Use Cases + Volume Scoping" with Carlos Suarez + Matt Fine + Veshal</div>
+    </div>
+    <div class="card">
+      <div class="section-label">What They're Excited About [FROM CALLS]</div>
+      <span class="excited-tag">Direct Mail Automation</span>
+      <span class="excited-tag">Always-On Campaigns</span>
+      <span class="excited-tag">First-Party Data Targeting</span>
+      <span class="excited-tag">Radius Targeting</span>
+      <span class="excited-tag">Audience Segmentation</span>
+      <span class="excited-tag">Consolidating Away From Hatch</span>
+      <span class="excited-tag">Outbound SMS for Tune-Ups</span>
+      <span class="excited-tag">ServiceTitan Integration</span>
+      <span class="excited-tag">Campaign Analytics</span>
+      <span class="excited-tag">Avoca Portal Self-Serve</span>
+      <span class="excited-tag">Dynamic Member Lookup (Simple Scheduler)</span>
+    </div>
+  </div>
+
+  <!-- Services / Campaign Types -->
+  <div class="card" style="margin-bottom:20px;">
+    <div class="section-label">Campaign Types & Services [FROM CALLS] — Confirm Launch Order with Carlos</div>
+    <div class="grid" style="margin-bottom:0; gap:12px;">
+      <div>
+        <div class="kv-label" style="margin-bottom:8px;">Priority Campaigns (Direct Mail + Outbound)</div>
+        <span class="tag green">Tune-Up Reminders</span>
+        <span class="tag green">Member Maintenance Scheduling</span>
+        <span class="tag green">Reactivation</span>
+        <span class="tag green">Unsold Estimate Follow-Up</span>
+        <span class="tag green">Expiring Membership</span>
+        <span class="tag green">New Customer Acquisition</span>
+      </div>
+      <div>
+        <div class="kv-label" style="margin-bottom:8px;">Additional Use Cases [CONFIRM]</div>
+        <span class="tag amber">Collections / Invoice Reminders</span>
+        <span class="tag amber">Reputation Management</span>
+        <span class="tag amber">Appointment Confirmations</span>
+        <span class="tag amber">Speed to Lead (Angie / Google SA)</span>
+        <span class="tag amber">Abandoned Call Follow-Up</span>
+      </div>
+    </div>
+    <div style="margin-top:12px;">
+      <div class="kv-label" style="margin-bottom:6px;">Brands — Launch Order</div>
+      <span class="tag green">AirServe (first)</span>
+      <span class="tag">Mr. Electric</span>
+      <span class="tag">Mr. Rooter</span>
+      <span class="tag">Glass Doctor</span>
+    </div>
+  </div>
+
+  <!-- Key Concerns + Agent Config -->
+  <div class="grid">
+    <div class="card">
+      <div class="section-label">Key Concerns & What to Avoid [FROM CALLS]</div>
+      <ul class="clean">
+        <li>Carlos is a one-man band — sole person building all campaigns; bandwidth is the #1 risk</li>
+        <li>Do not go live on Outbound SMS before TCPA/A2P phone number compliance is approved</li>
+        <li>Do not use large budget numbers upfront — internal stakeholders are sensitive to cost; start with conservative minimum and scale</li>
+        <li>Do not add more portals for CSRs; Avoca must replace Hatch entirely, not sit alongside it</li>
+        <li>Respect 90-day message exclusion window (CHS prefers 90 days, not the default 45)</li>
+        <li>Neighborly branding compliance required on all direct mail pieces</li>
+        <li>Avoid re-deploying inbound AI without proper change management — previous rollout damaged trust with CSR teams and some customers (especially Southern markets)</li>
+        <li>Ensure opt-outs sync correctly to ServiceTitan — critical for compliance</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="section-label">Implementation Config Recommendations [FROM CALLS]</div>
+      <ul class="clean">
+        <li>Multiple tracking numbers needed per brand/region — area codes: 256, 423, 205, 334, 615+</li>
+        <li>Separate campaign audiences per brand and service area — do not mix</li>
+        <li>Start with core campaigns (tune-ups, memberships, reactivation) before new acquisition</li>
+        <li>Set message exclusion window to 90 days (CHS preference)</li>
+        <li>Configure TCPA-compliant opt-out sync with ServiceTitan before outbound goes live</li>
+        <li>Enable dynamic member lookup in Simple Scheduler — avoid asking customers for membership status they should already know</li>
+        <li>Use 4-touch "moderate" cadence for tune-up text campaigns</li>
+        <li>Business hours, escalation reasons, and nudge settings need to be configured per brand</li>
+        <li>Inbound AI: do NOT re-activate without dedicated change management plan and CHS sign-off</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Risks + Priorities -->
+  <div class="grid">
+    <div class="card">
+      <div class="section-label">Risks & Watch Items</div>
+      <div class="risk-item">Bandwidth: Carlos is the sole resource for all campaign builds across 4 brands and multiple states. Anything that requires his time to be split will delay go-live.</div>
+      <div class="risk-item">TCPA/A2P compliance delay: Outbound SMS cannot launch until phone number provisioning is approved. Do not promise a timeline that depends on this.</div>
+      <div class="risk-item amber">Trust deficit: Previous Avoca inbound deployment failed — team resistance, especially in Southern markets. Inbound reactivation will require careful change management, not just a config change.</div>
+      <div class="risk-item amber">Multi-brand complexity: 4 brands, multiple locations, separate tracking numbers, Neighborly branding guidelines. Higher setup effort than a single-brand customer.</div>
+      <div class="risk-item amber">Budget sensitivity: $16K/month was flagged as a concern; internal stakeholders need ROI justification. Track early results and share wins with Lee Downing quickly.</div>
+      <div class="risk-item green">Strong champion: Lee Downing is on Avoca's CAB and is personally invested. Stacey Pruitt and Carlos Suarez are hands-on. High confidence in engagement.</div>
+    </div>
+    <div class="card">
+      <div class="section-label">Implementation Priorities</div>
+      <div class="priority-item"><span class="priority-num">1</span><span>Launch Direct Mail for AirServe — start with tune-ups, memberships, reactivation. Carlos has onboarding scheduled. Move immediately.</span></div>
+      <div class="priority-item"><span class="priority-num">2</span><span>Complete TCPA/A2P compliance for Outbound SMS phone numbers. Unblock outbound campaigns across all brands.</span></div>
+      <div class="priority-item"><span class="priority-num">3</span><span>Outbound SMS campaigns — member tune-up reminders, expiring memberships, unsold estimates. Start small (low audience size to test), then scale.</span></div>
+      <div class="priority-item"><span class="priority-num">4</span><span>Simple Scheduler — confirm dynamic member lookup, configure business hours and escalation per brand.</span></div>
+      <div class="priority-item"><span class="priority-num">5</span><span>Expand all of the above to Mr. Electric, Mr. Rooter, Glass Doctor after AirServe is stable.</span></div>
+    </div>
+  </div>
+
+  <!-- Call Data Sources -->
+  <div class="card" style="margin-bottom:20px;">
+    <div class="section-label">Call Data Sources</div>
+    <div style="font-size:13px; color:#374151;">
+      <p style="margin-bottom:8px;"><strong>Authoritative:</strong> Jun 8, 2026 — "Avoca x CHS Direct Mail Use Cases + Volume Scoping" (23m 56s) — Carlos Suarez + Matt Fine + Veshal. Closing call for the Direct Mail upsell. Most current and deal-specific.</p>
+      <p style="margin-bottom:8px;"><strong>Supporting:</strong> Jun 8, 2026 — "Avoca CAB Bi-Monthly Check In" (18m) — Lee Downing + Tyson + Jamie. Executive relationship context.</p>
+      <p style="margin-bottom:8px;"><strong>Supporting:</strong> May 11, 2026 — "CHS x Avoca Outbound / Simple Scheduler Deployment" (37m 52s) — Zach + Matt Spencer + Carlos + Danielle + Cole + Stacey. Outbound and Simple Scheduler implementation details.</p>
+      <p style="margin-bottom:8px;"><strong>Supporting:</strong> Apr 23, 2026 — "CHS x Avoca Brainstorm Session" (36m 18s) — Stacey + Cole. Strategic planning, Hatch migration goals.</p>
+      <p><strong>Background:</strong> Apr 20, 2026 — "CHS Senior Leadership" (30m) — Full leadership call with Lee, Stacey, Cole, Cheyenne, Jason, Jen, Jon, Laura. Context on previous inbound AI pause and re-engagement plan.</p>
+    </div>
+  </div>
+
+</div>
+<div class="footer">Avoca Onboarding Brief · Complete Home Services, LLC · Generated June 26, 2026</div>
+</body>
+</html>
