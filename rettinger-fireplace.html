@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rettinger Fireplace Systems — Onboarding Brief</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f6fa; color: #1a1a2e; line-height: 1.6; }
+  .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 32px 40px; }
+  .header-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
+  .company-name { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+  .badge { display: inline-block; background: #dc2626; color: white; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 20px; letter-spacing: 0.5px; text-transform: uppercase; }
+  .header-meta { font-size: 13px; color: #94a3b8; margin-top: 6px; }
+  .header-meta span { margin-right: 20px; }
+  .content { max-width: 1100px; margin: 0 auto; padding: 32px 24px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .grid-4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .card { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .section-label { font-size: 10px; font-weight: 700; color: #6b7280; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid #f0f0f0; }
+  .kv { margin-bottom: 10px; }
+  .kv-label { font-size: 11px; color: #6b7280; font-weight: 600; margin-bottom: 2px; }
+  .kv-value { font-size: 14px; color: #1a1a2e; font-weight: 500; }
+  .tag { display: inline-block; background: #eff6ff; color: #1d4ed8; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px; margin: 2px; }
+  .tag.amber { background: #fffbeb; color: #92400e; }
+  .tag.green { background: #f0fdf4; color: #166534; }
+  .tag.red { background: #fef2f2; color: #7f1d1d; }
+  .contact-card { border: 1px solid #e5e7eb; border-radius: 8px; padding: 14px; margin-bottom: 10px; }
+  .contact-name { font-weight: 700; font-size: 14px; color: #1a1a2e; }
+  .contact-title { font-size: 12px; color: #6b7280; margin-bottom: 6px; }
+  .contact-email { font-size: 12px; color: #2563eb; font-family: monospace; }
+  .contact-phone { font-size: 12px; color: #374151; }
+  .contact-badge { float: right; }
+  .risk-item { border-left: 3px solid #ef4444; padding: 10px 14px; background: #fef2f2; border-radius: 0 6px 6px 0; margin-bottom: 8px; font-size: 13px; }
+  .risk-item.amber { border-color: #f59e0b; background: #fffbeb; }
+  .metric-box { text-align: center; padding: 16px; border: 1px solid #e5e7eb; border-radius: 8px; }
+  .metric-number { font-size: 28px; font-weight: 800; color: #1d4ed8; }
+  .metric-label { font-size: 11px; color: #6b7280; margin-top: 2px; }
+  ul.clean { list-style: none; padding: 0; }
+  ul.clean li { padding: 4px 0; font-size: 13px; color: #374151; border-bottom: 1px solid #f9f9f9; }
+  ul.clean li:before { content: "→ "; color: #9ca3af; }
+  .alert { background: #fef3c7; border: 1px solid #fbbf24; border-radius: 8px; padding: 12px 16px; font-size: 13px; color: #92400e; margin-bottom: 16px; }
+  .alert.urgent { background: #fef2f2; border-color: #fca5a5; color: #7f1d1d; }
+  .winback-box { background: #f0fdf4; border: 1px solid #86efac; border-radius: 10px; padding: 16px; margin-bottom: 20px; }
+  .winback-title { font-size: 11px; font-weight: 700; color: #166534; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 8px; }
+  .priority-item { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid #f0f0f0; font-size: 13px; }
+  .priority-num { font-weight: 800; color: #1d4ed8; min-width: 24px; }
+  .source-note { font-size: 11px; color: #9ca3af; font-style: italic; margin-top: 8px; }
+  .footer { text-align: center; color: #9ca3af; font-size: 12px; padding: 24px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-top">
+    <div class="company-name">Rettinger Fireplace Systems</div>
+    <span class="badge">Winback</span>
+  </div>
+  <div class="header-meta">
+    <span>📍 Berlin, NJ</span>
+    <span>🔧 CRM: Striven (ERP, NOT ServiceTitan)</span>
+    <span>📋 Deal: Rettinger Fireplace Systems - 2026 - Winback</span>
+    <span>Generated: June 29, 2026</span>
+  </div>
+</div>
+
+<div class="content">
+
+  <div class="alert urgent">
+    🔴 <strong>Urgency: VERY HIGH.</strong> Dave said they're "crying uncle" — they've been missing calls without Avoca. Target go-live was 4–6 weeks from the Feb 25 reconnect call, which means this is already past due. Custom Striven API is the critical path. If closed-loop booking cannot be confirmed, do not go live.
+  </div>
+
+  <div class="winback-box">
+    <div class="winback-title">Winback Context — Read Carefully</div>
+    Rettinger was an Avoca customer approximately 1 year ago. They turned off Avoca because the AI was generating too many leads without a way to close the loop back into Striven (their ERP). Result: overwhelming call volume with no booking confirmation. They are returning ONLY because a custom Striven API integration is on the table. If that does not materialize, they will churn again.
+  </div>
+
+  <div class="grid-4">
+    <div class="metric-box"><div class="metric-number">$21.6K</div><div class="metric-label">ARR</div></div>
+    <div class="metric-box"><div class="metric-number">$1,800</div><div class="metric-label">MRR</div></div>
+    <div class="metric-box"><div class="metric-number">~928</div><div class="metric-label">Service Calls (last 30d)</div></div>
+    <div class="metric-box"><div class="metric-number">~24</div><div class="metric-label">Field Techs</div></div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="section-label">Deal Details</div>
+      <div class="kv"><div class="kv-label">HubSpot Company</div><div class="kv-value">Rettinger Fireplace Systems</div></div>
+      <div class="kv"><div class="kv-label">HubSpot Deal</div><div class="kv-value">Rettinger Fireplace Systems - 2026 - Winback</div></div>
+      <div class="kv"><div class="kv-label">Close Date</div><div class="kv-value">June 3, 2026</div></div>
+      <div class="kv"><div class="kv-label">ARR</div><div class="kv-value">$21,600/yr ($1,800/mo)</div></div>
+      <div class="kv"><div class="kv-label">Products</div><div class="kv-value">Responder</div></div>
+      <div class="kv"><div class="kv-label">AE</div><div class="kv-value">Evan Juliano (evan@avoca.ai)</div></div>
+      <div class="kv"><div class="kv-label">IM</div><div class="kv-value">Omkar Ingale (omkar@avoca.ai)</div></div>
+    </div>
+    <div class="card">
+      <div class="section-label">Company Overview</div>
+      <div class="kv"><div class="kv-label">What They Do</div><div class="kv-value">Fireplace installation, service, maintenance, and builder sales in the Berlin, NJ area. High call volume (900–1,700/mo). Amy and Jonathan handle inbound calls.</div></div>
+      <div class="kv"><div class="kv-label">CRM / ERP</div><div class="kv-value">Striven (NOT ServiceTitan) — custom API integration required</div></div>
+      <div class="kv"><div class="kv-label">Messaging Tool</div><div class="kv-value">Podium (migration risk — confirm plan)</div></div>
+      <div class="kv"><div class="kv-label">Team Size</div><div class="kv-value">6 sales, 20–24 field techs, Amy + Jonathan handle inbound, 4 dispatchers</div></div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:20px;">
+    <div class="section-label">Key Contacts</div>
+    <div class="contact-card">
+      <span class="contact-badge"><span class="tag">Owner / DM</span></span>
+      <div class="contact-name">Dave Rettinger</div>
+      <div class="contact-title">Owner</div>
+      <div class="contact-email">david@rettingerfireplace.com</div>
+      <div class="contact-phone">856-264-7032</div>
+    </div>
+    <div class="contact-card">
+      <span class="contact-badge"><span class="tag">Inbound POC</span></span>
+      <div class="contact-name">Jonathan Weiss</div>
+      <div class="contact-title">Operations / Inbound</div>
+      <div class="contact-email">jonathan@rettingerfireplace.com</div>
+    </div>
+    <div class="contact-card">
+      <span class="contact-badge"><span class="tag">Inbound POC</span></span>
+      <div class="contact-name">Amy</div>
+      <div class="contact-title">Inbound / CSR</div>
+      <div class="contact-email">amy@rettingerfireplace.com</div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:20px;">
+    <div class="section-label">Services Offered</div>
+    <span class="tag green">Fireplace Installation</span>
+    <span class="tag green">Fireplace Service</span>
+    <span class="tag green">Fireplace Maintenance</span>
+    <span class="tag green">Builder Sales</span>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="section-label">Why They're Coming Back / Key Goals</div>
+      <ul class="clean">
+        <li>Missing too many calls without Avoca — "crying uncle"</li>
+        <li>Custom Striven API now on table (was the blocker that caused churn)</li>
+        <li>Closed-loop booking is non-negotiable — memos alone are not sufficient</li>
+        <li>Better deduplication and customer matching in Striven</li>
+        <li>Overflow and after-hours coverage</li>
+        <li>Eventually: outbound campaigns</li>
+      </ul>
+      <div class="source-note">Source: Attention call 6dd696f7 — Feb 25, 2026 reconnect call (authoritative)</div>
+    </div>
+    <div class="card">
+      <div class="section-label">What They're Excited About</div>
+      <ul class="clean">
+        <li>Custom Striven integration — closed-loop booking (this is the entire reason they're back)</li>
+        <li>Not overwhelming staff this time around (guardrails in place)</li>
+        <li>After-hours AI that actually confirms bookings</li>
+        <li>Future: outbound campaigns for existing customer base</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:20px;">
+    <div class="section-label">Critical: Striven API Integration</div>
+    <div class="risk-item">Closed-loop booking via Striven API is the make-or-break requirement. The previous Avoca run failed because AI generated leads but couldn't confirm booking in Striven — this caused staff to be overwhelmed. Memos are NOT sufficient. If the custom API cannot be delivered, Rettinger will churn again.</div>
+    <ul class="clean" style="margin-top:12px;">
+      <li>Confirm API scope and timeline with engineering before promising go-live date</li>
+      <li>Deduplication logic: customer matching must work against Striven's data model</li>
+      <li>Confirm Striven's API capabilities before building (field mapping, booking endpoints)</li>
+    </ul>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="section-label">Key Concerns &amp; What to Avoid</div>
+      <div class="risk-item">DO NOT go live without closed-loop Striven booking — this was the exact failure point last time</div>
+      <div class="risk-item">DO NOT overwhelm Amy and Jonathan with transfer volume — guardrails required on transfer thresholds</div>
+      <div class="risk-item amber">Podium migration risk — they currently use Podium for messaging; plan the migration carefully</div>
+      <div class="risk-item amber">Deduplication failures will create duplicate records in Striven — test thoroughly before launch</div>
+      <div class="risk-item amber">High call volume (900–1,700/month) means any misconfiguration will surface quickly and at scale</div>
+    </div>
+    <div class="card">
+      <div class="section-label">Implementation Priorities</div>
+      <div class="priority-item"><span class="priority-num">1</span><span>Custom Striven API — closed-loop booking integration (non-negotiable, critical path)</span></div>
+      <div class="priority-item"><span class="priority-num">2</span><span>Deduplication and customer matching against Striven data</span></div>
+      <div class="priority-item"><span class="priority-num">3</span><span>Configure overflow and after-hours handling with guardrails on transfer volume</span></div>
+      <div class="priority-item"><span class="priority-num">4</span><span>Plan Podium migration — determine timeline and handoff</span></div>
+      <div class="priority-item"><span class="priority-num">5</span><span>Outbound campaigns (future phase after stabilization)</span></div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:20px;">
+    <div class="section-label">Call Data Sources</div>
+    <div class="kv"><div class="kv-label">Primary (Authoritative)</div><div class="kv-value">6dd696f7 — February 25, 2026 reconnect / winback call</div></div>
+    <div class="kv"><div class="kv-label">Note</div><div class="kv-value">This is the only Attention call on file for Rettinger as a winback. Additional context may exist in legacy Avoca customer records.</div></div>
+  </div>
+
+</div>
+<div class="footer">Avoca Onboarding Brief · Rettinger Fireplace Systems · Generated June 29, 2026</div>
+</body>
+</html>
