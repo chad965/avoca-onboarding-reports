@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evergreen Plumbing, Heating and Air — Onboarding Brief</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f6fa; color: #1a1a2e; line-height: 1.6; }
+  .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 32px 40px; }
+  .header-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
+  .company-name { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+  .badge { display: inline-block; background: #10b981; color: white; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 20px; letter-spacing: 0.5px; text-transform: uppercase; }
+  .header-meta { font-size: 13px; color: #94a3b8; margin-top: 6px; }
+  .header-meta span { margin-right: 20px; }
+  .content { max-width: 1100px; margin: 0 auto; padding: 32px 24px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .grid-4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .card { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .section-label { font-size: 10px; font-weight: 700; color: #6b7280; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid #f0f0f0; }
+  .kv { margin-bottom: 10px; }
+  .kv-label { font-size: 11px; color: #6b7280; font-weight: 600; margin-bottom: 2px; }
+  .kv-value { font-size: 14px; color: #1a1a2e; font-weight: 500; }
+  .tag { display: inline-block; background: #eff6ff; color: #1d4ed8; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px; margin: 2px; }
+  .tag.amber { background: #fffbeb; color: #92400e; }
+  .tag.green { background: #f0fdf4; color: #166534; }
+  .contact-card { border: 1px solid #e5e7eb; border-radius: 8px; padding: 14px; margin-bottom: 10px; }
+  .contact-name { font-weight: 700; font-size: 14px; color: #1a1a2e; }
+  .contact-title { font-size: 12px; color: #6b7280; margin-bottom: 6px; }
+  .contact-email { font-size: 12px; color: #2563eb; font-family: monospace; }
+  .contact-phone { font-size: 12px; color: #374151; }
+  .contact-badge { float: right; }
+  .risk-item { border-left: 3px solid #ef4444; padding: 10px 14px; background: #fef2f2; border-radius: 0 6px 6px 0; margin-bottom: 8px; font-size: 13px; }
+  .risk-item.amber { border-color: #f59e0b; background: #fffbeb; }
+  .metric-box { text-align: center; padding: 16px; border: 1px solid #e5e7eb; border-radius: 8px; }
+  .metric-number { font-size: 28px; font-weight: 800; color: #1d4ed8; }
+  .metric-label { font-size: 11px; color: #6b7280; margin-top: 2px; }
+  ul.clean { list-style: none; padding: 0; }
+  ul.clean li { padding: 4px 0; font-size: 13px; color: #374151; border-bottom: 1px solid #f9f9f9; }
+  ul.clean li:before { content: "→ "; color: #9ca3af; }
+  .alert { background: #fef3c7; border: 1px solid #fbbf24; border-radius: 8px; padding: 12px 16px; font-size: 13px; color: #92400e; margin-bottom: 16px; }
+  .alert.urgent { background: #fef2f2; border-color: #fca5a5; color: #7f1d1d; }
+  .priority-item { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid #f0f0f0; font-size: 13px; }
+  .priority-num { font-weight: 800; color: #1d4ed8; min-width: 24px; }
+  .source-note { font-size: 11px; color: #9ca3af; font-style: italic; margin-top: 8px; }
+  .footer { text-align: center; color: #9ca3af; font-size: 12px; padding: 24px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-top">
+    <div class="company-name">Evergreen Plumbing, Heating and Air</div>
+    <span class="badge">New Customer</span>
+  </div>
+  <div class="header-meta">
+    <span>📍 Salem, OR</span>
+    <span>🔧 CRM: ServiceTitan</span>
+    <span>📋 Deal: Evergreen plumbing, heating and air - 2026 New Business</span>
+    <span>Generated: June 29, 2026</span>
+  </div>
+</div>
+
+<div class="content">
+
+  <div class="alert urgent">
+    🔴 <strong>Urgency: HIGH.</strong> Marv is dealing with staff shortages and wants to go live within ~2 weeks of onboarding starting. Daytime AI call handling is the immediate priority. Move fast on ServiceTitan integration and KB build.
+  </div>
+
+  <div class="grid-4">
+    <div class="metric-box"><div class="metric-number">$18K</div><div class="metric-label">ARR</div></div>
+    <div class="metric-box"><div class="metric-number">$1,500</div><div class="metric-label">MRR</div></div>
+    <div class="metric-box"><div class="metric-number">5</div><div class="metric-label">CSRs (4 active)</div></div>
+    <div class="metric-box"><div class="metric-number">2 wks</div><div class="metric-label">Target Go-Live</div></div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="section-label">Deal Details</div>
+      <div class="kv"><div class="kv-label">HubSpot Company</div><div class="kv-value">Evergreen Plumbing, Heating and Air</div></div>
+      <div class="kv"><div class="kv-label">HubSpot Deal</div><div class="kv-value">Evergreen plumbing, heating and air - 2026 New Business</div></div>
+      <div class="kv"><div class="kv-label">Close Date</div><div class="kv-value">June 10, 2026</div></div>
+      <div class="kv"><div class="kv-label">ARR</div><div class="kv-value">$18,000/yr ($1,500/mo)</div></div>
+      <div class="kv"><div class="kv-label">Products</div><div class="kv-value">Responder</div></div>
+      <div class="kv"><div class="kv-label">AE</div><div class="kv-value">Brooks Smith (brooks@avoca.ai)</div></div>
+      <div class="kv"><div class="kv-label">IM</div><div class="kv-value">Otto Sunday (otto@avoca.ai)</div></div>
+    </div>
+    <div class="card">
+      <div class="section-label">Company Overview</div>
+      <div class="kv"><div class="kv-label">What They Do</div><div class="kv-value">Plumbing + HVAC (recently added) home services in Salem, OR. Owner-operated by Marv Colby.</div></div>
+      <div class="kv"><div class="kv-label">CRM</div><div class="kv-value">ServiceTitan (do NOT use Dispatch Pro)</div></div>
+      <div class="kv"><div class="kv-label">Team Size</div><div class="kv-value">5 CSRs (4 active), plus field techs</div></div>
+      <div class="kv"><div class="kv-label">Current After-Hours</div><div class="kv-value">Ruby Receptionists (paid) + internal staff incentives; rolling to Taylor</div></div>
+      <div class="kv"><div class="kv-label">Voice Preference</div><div class="kv-value">Female AI voice preferred</div></div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:20px;">
+    <div class="section-label">Key Contacts</div>
+    <div class="contact-card">
+      <span class="contact-badge"><span class="tag">Owner / DM</span></span>
+      <div class="contact-name">Marv Colby</div>
+      <div class="contact-title">Owner</div>
+      <div class="contact-email">marv@evergreenplumbing.team</div>
+      <div class="contact-phone">+1 (503) 509-6034</div>
+    </div>
+    <div class="contact-card">
+      <span class="contact-badge"><span class="tag">Operations POC</span></span>
+      <div class="contact-name">Dana DeSpain</div>
+      <div class="contact-title">Operations</div>
+      <div class="contact-email">dana@evergreenplumbing.team</div>
+    </div>
+    <div class="contact-card">
+      <span class="contact-badge"><span class="tag">Team</span></span>
+      <div class="contact-name">Stella Brittsan</div>
+      <div class="contact-title">CSR / Staff</div>
+      <div class="contact-email">stella@evergreenplumbing.team</div>
+      <div class="contact-phone">503-385-6382</div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:20px;">
+    <div class="section-label">Services Offered</div>
+    <span class="tag green">Plumbing (confirmed)</span>
+    <span class="tag amber">HVAC — recently added, not yet in KB</span>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="section-label">Why They Purchased / Key Goals</div>
+      <ul class="clean">
+        <li>Staff shortages — can't handle current call volume with 4 active CSRs</li>
+        <li>Replace Ruby Receptionists for after-hours (cutting cost + improving quality)</li>
+        <li>AI daytime overflow handling to support undertrained staff</li>
+        <li>Better booking efficiency and call-to-appointment conversion</li>
+      </ul>
+      <div class="source-note">Source: Attention call d508ff07 (June 17 initial onboarding), f30a3147 (March 3 closing)</div>
+    </div>
+    <div class="card">
+      <div class="section-label">What They're Excited About</div>
+      <ul class="clean">
+        <li>AI taking daytime overflow calls without staff involvement</li>
+        <li>After-hours handling that's smarter than Ruby Receptionists</li>
+        <li>Getting HVAC into the KB as they grow that division</li>
+        <li>Reducing cost of live answering services</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:20px;">
+    <div class="section-label">Critical ST Config Notes</div>
+    <div class="risk-item">DO NOT use ServiceTitan Dispatch Pro — Marv confirmed this creates capacity config confusion. Use standard ST capacity settings only.</div>
+    <ul class="clean" style="margin-top:12px;">
+      <li>After-hours calls roll to Taylor — confirm Taylor's role and setup in ST</li>
+      <li>HVAC division not yet configured in ST KB — build plumbing first, HVAC next</li>
+      <li>Confirm booking windows and capacity caps before go-live</li>
+      <li>Customer needs a way to bypass AI and reach a human (confirm transfer trigger)</li>
+    </ul>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="section-label">Key Concerns &amp; What to Avoid</div>
+      <div class="risk-item">DO NOT configure Dispatch Pro in ServiceTitan</div>
+      <div class="risk-item amber">HVAC not yet in KB — do not have AI handle HVAC calls until KB is built</div>
+      <div class="risk-item amber">Customer bypass option needed — AI should have a clear path to transfer to human</div>
+      <div class="risk-item amber">Booking window/cap confusion — verify capacity config before launch</div>
+    </div>
+    <div class="card">
+      <div class="section-label">Implementation Priorities</div>
+      <div class="priority-item"><span class="priority-num">1</span><span>AI daytime call handling + plumbing booking via ServiceTitan</span></div>
+      <div class="priority-item"><span class="priority-num">2</span><span>After-hours / on-call handling (replace Ruby Receptionists)</span></div>
+      <div class="priority-item"><span class="priority-num">3</span><span>Build HVAC into KB and expand to HVAC booking</span></div>
+      <div class="priority-item"><span class="priority-num">4</span><span>Fine-tune booking windows and capacity caps</span></div>
+      <div class="priority-item"><span class="priority-num">5</span><span>Configure female AI voice preference</span></div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:20px;">
+    <div class="section-label">Call Data Sources</div>
+    <div class="kv"><div class="kv-label">Primary (Authoritative)</div><div class="kv-value">d508ff07 — June 17, 2026 initial onboarding call</div></div>
+    <div class="kv"><div class="kv-label">Secondary</div><div class="kv-value">f30a3147 — March 3, 2026 closing call</div></div>
+  </div>
+
+</div>
+<div class="footer">Avoca Onboarding Brief · Evergreen Plumbing, Heating and Air · Generated June 29, 2026</div>
+</body>
+</html>
