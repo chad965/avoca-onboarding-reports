@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Floor Nation — Onboarding Brief</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f6fa; color: #1a1a2e; line-height: 1.6; }
+  .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 32px 40px; }
+  .header-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
+  .company-name { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+  .badge { display: inline-block; background: #7c3aed; color: white; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 20px; letter-spacing: 0.5px; text-transform: uppercase; }
+  .header-meta { font-size: 13px; color: #94a3b8; margin-top: 6px; }
+  .header-meta span { margin-right: 20px; }
+  .content { max-width: 1100px; margin: 0 auto; padding: 32px 24px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .grid-4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .card { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .section-label { font-size: 10px; font-weight: 700; color: #6b7280; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid #f0f0f0; }
+  .kv { margin-bottom: 10px; }
+  .kv-label { font-size: 11px; color: #6b7280; font-weight: 600; margin-bottom: 2px; }
+  .kv-value { font-size: 14px; color: #1a1a2e; font-weight: 500; }
+  .tag { display: inline-block; background: #eff6ff; color: #1d4ed8; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px; margin: 2px; }
+  .tag.amber { background: #fffbeb; color: #92400e; }
+  .tag.green { background: #f0fdf4; color: #166534; }
+  .tag.red { background: #fef2f2; color: #7f1d1d; }
+  .contact-card { border: 1px solid #e5e7eb; border-radius: 8px; padding: 14px; margin-bottom: 10px; }
+  .contact-name { font-weight: 700; font-size: 14px; color: #1a1a2e; }
+  .contact-title { font-size: 12px; color: #6b7280; margin-bottom: 6px; }
+  .contact-email { font-size: 12px; color: #2563eb; font-family: monospace; }
+  .contact-phone { font-size: 12px; color: #374151; }
+  .contact-badge { float: right; }
+  .risk-item { border-left: 3px solid #ef4444; padding: 10px 14px; background: #fef2f2; border-radius: 0 6px 6px 0; margin-bottom: 8px; font-size: 13px; }
+  .risk-item.amber { border-color: #f59e0b; background: #fffbeb; }
+  .metric-box { text-align: center; padding: 16px; border: 1px solid #e5e7eb; border-radius: 8px; }
+  .metric-number { font-size: 28px; font-weight: 800; color: #1d4ed8; }
+  .metric-label { font-size: 11px; color: #6b7280; margin-top: 2px; }
+  ul.clean { list-style: none; padding: 0; }
+  ul.clean li { padding: 4px 0; font-size: 13px; color: #374151; border-bottom: 1px solid #f9f9f9; }
+  ul.clean li:before { content: "→ "; color: #9ca3af; }
+  .alert { background: #fef3c7; border: 1px solid #fbbf24; border-radius: 8px; padding: 12px 16px; font-size: 13px; color: #92400e; margin-bottom: 16px; }
+  .priority-item { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid #f0f0f0; font-size: 13px; }
+  .priority-num { font-weight: 800; color: #1d4ed8; min-width: 24px; }
+  .source-note { font-size: 11px; color: #9ca3af; font-style: italic; margin-top: 8px; }
+  .footer { text-align: center; color: #9ca3af; font-size: 12px; padding: 24px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-top">
+    <div class="company-name">Floor Nation</div>
+    <span class="badge">Enterprise Deal</span>
+  </div>
+  <div class="header-meta">
+    <span>📍 Canton, MI (HubSpot entity: Victor's Home Solutions)</span>
+    <span>🔧 CRM: ServiceTitan (2 tenants)</span>
+    <span>📋 Deal: Floor Nation - New Business</span>
+    <span>Generated: June 29, 2026</span>
+  </div>
+</div>
+
+<div class="content">
+
+  <div class="alert">
+    ⚠️ <strong>Entity / Brand Note:</strong> HubSpot company = Victor's Home Solutions. Operating brand = Floor Nation (flooring + planned HVAC). Victor's Home Solutions roofing arm was sold to Vertex in 2023; Floor Nation is the new entity spun from ex-Victor's leadership. Two separate ServiceTitan tenants — each needs its own Avoca config. Do NOT push Simple Scheduler (they have ST Scheduling Pro).
+  </div>
+
+  <div class="grid-4">
+    <div class="metric-box"><div class="metric-number">$108K</div><div class="metric-label">ARR</div></div>
+    <div class="metric-box"><div class="metric-number">$9,000</div><div class="metric-label">MRR</div></div>
+    <div class="metric-box"><div class="metric-number">~1,000</div><div class="metric-label">Calls/Month/Tenant</div></div>
+    <div class="metric-box"><div class="metric-number">2</div><div class="metric-label">ST Tenants</div></div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="section-label">Deal Details</div>
+      <div class="kv"><div class="kv-label">HubSpot Company</div><div class="kv-value">Victor's Home Solutions (DBA: Floor Nation)</div></div>
+      <div class="kv"><div class="kv-label">HubSpot Deal</div><div class="kv-value">Floor Nation - New Business</div></div>
+      <div class="kv"><div class="kv-label">Close Date</div><div class="kv-value">June 9, 2026</div></div>
+      <div class="kv"><div class="kv-label">ARR</div><div class="kv-value">$108,000/yr ($9,000/mo)</div></div>
+      <div class="kv"><div class="kv-label">Products</div><div class="kv-value">Responder + Speed to Lead (Waves 1–4) + Coach</div></div>
+      <div class="kv"><div class="kv-label">AE</div><div class="kv-value">Rafi Derringer (rafi@avoca.ai)</div></div>
+      <div class="kv"><div class="kv-label">IM</div><div class="kv-value">Matt Spencer (matt.spencer@avoca.ai)</div></div>
+    </div>
+    <div class="card">
+      <div class="section-label">Company Overview</div>
+      <div class="kv"><div class="kv-label">What They Do</div><div class="kv-value">Flooring installation and planned HVAC services under the Floor Nation brand. Two ServiceTitan tenants as of May 2026 (ST went live May 28, 2026).</div></div>
+      <div class="kv"><div class="kv-label">CRM</div><div class="kv-value">ServiceTitan — 2 tenants (Tenant 1 now, Tenant 2 = August)</div></div>
+      <div class="kv"><div class="kv-label">Call Volume</div><div class="kv-value">~900–1,000 calls/month per tenant</div></div>
+      <div class="kv"><div class="kv-label">ST Scheduling Pro</div><div class="kv-value">In place for 1+ year — do NOT suggest Simple Scheduler</div></div>
+      <div class="kv"><div class="kv-label">Prior AI Experience</div><div class="kv-value">Bad experience with Ruby/SAS (local knowledge gaps) — they are sensitive to AI that doesn't know local context</div></div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:20px;">
+    <div class="section-label">Key Contacts</div>
+    <div class="contact-card">
+      <span class="contact-badge"><span class="tag">CMO / Primary POC</span></span>
+      <div class="contact-name">Samantha Dunn</div>
+      <div class="contact-title">Chief Marketing Officer</div>
+      <div class="contact-email">s.dunn@floornation.com</div>
+    </div>
+    <div class="contact-card">
+      <span class="contact-badge"><span class="tag">Owner / DM</span></span>
+      <div class="contact-name">Victor Smolyanov</div>
+      <div class="contact-title">Owner</div>
+      <div class="contact-email">victor@victorsroofing.com</div>
+    </div>
+    <div class="contact-card">
+      <span class="contact-badge"><span class="tag">Ops POC</span></span>
+      <div class="contact-name">Menelek Kali</div>
+      <div class="contact-title">Contact Center Director</div>
+      <div class="contact-email">m.kali@victors.com</div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:20px;">
+    <div class="section-label">Services Offered</div>
+    <span class="tag green">Flooring (confirmed)</span>
+    <span class="tag amber">HVAC (planned — not yet active)</span>
+    <span class="tag amber">Builder Sales (confirm scope)</span>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="section-label">Why They Purchased / Key Goals</div>
+      <ul class="clean">
+        <li>Speed to lead — capture inbound web/form leads before they go cold</li>
+        <li>Inbound overflow and after-hours AI handling (full AI to start)</li>
+        <li>Outbound with local area code matching (critical for conversion)</li>
+        <li>ST integration across both tenants</li>
+        <li>Replace Ruby/SAS with AI that has proper local knowledge</li>
+      </ul>
+      <div class="source-note">Source: Attention call 56240717 (June 3 closing — authoritative), 4cf3781f (May 28 demo), 3a037bc4 (May 20 demo)</div>
+    </div>
+    <div class="card">
+      <div class="section-label">What They're Excited About</div>
+      <ul class="clean">
+        <li>Speed to Lead — rapid follow-up on web leads (Waves 1–4)</li>
+        <li>Avoca AI that actually knows local context (vs. Ruby/SAS failures)</li>
+        <li>Outbound with area code matching to avoid spam flagging</li>
+        <li>Full inbound AI handling to reduce contact center load</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:20px;">
+    <div class="section-label">Multi-Tenant Config Notes</div>
+    <ul class="clean">
+      <li>Tenant 1: onboard now (ST live since May 28)</li>
+      <li>Tenant 2: onboard in August — separate ST config, separate Avoca agent</li>
+      <li>Area code matching is CRITICAL for outbound — configure local area codes per tenant</li>
+      <li>Do NOT push ST Simple Scheduler — they have Scheduling Pro in place for 1+ year</li>
+      <li>Each tenant = separate Speed to Lead Waves 1–4 config</li>
+    </ul>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="section-label">Key Concerns &amp; What to Avoid</div>
+      <div class="risk-item">DO NOT suggest or configure ServiceTitan Simple Scheduler — Scheduling Pro is in place and they value it</div>
+      <div class="risk-item">Local knowledge gaps were the failure point with Ruby/SAS — ensure KB is deeply local before go-live</div>
+      <div class="risk-item amber">Outbound spam flagging — area code matching is required, not optional</div>
+      <div class="risk-item amber">Two ST tenants = complexity — keep configs separate, do not cross-contaminate</div>
+      <div class="risk-item amber">August timeline for Tenant 2 — do not rush it, keep focused on Tenant 1 first</div>
+    </div>
+    <div class="card">
+      <div class="section-label">Implementation Priorities</div>
+      <div class="priority-item"><span class="priority-num">1</span><span>Speed to Lead for Tenant 1 (Waves 1–4 — inbound lead response)</span></div>
+      <div class="priority-item"><span class="priority-num">2</span><span>Inbound overflow/after-hours AI for Tenant 1 (full AI to start)</span></div>
+      <div class="priority-item"><span class="priority-num">3</span><span>Outbound with local area code config — anti-spam setup</span></div>
+      <div class="priority-item"><span class="priority-num">4</span><span>ST integration for Tenant 1 (do NOT use Simple Scheduler)</span></div>
+      <div class="priority-item"><span class="priority-num">5</span><span>Begin Tenant 2 onboarding in August (separate config)</span></div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:20px;">
+    <div class="section-label">Call Data Sources</div>
+    <div class="kv"><div class="kv-label">Primary (Authoritative)</div><div class="kv-value">56240717 — June 3, 2026 closing call</div></div>
+    <div class="kv"><div class="kv-label">Secondary</div><div class="kv-value">4cf3781f — May 28, 2026 demo · 3a037bc4 — May 20, 2026 demo</div></div>
+  </div>
+
+</div>
+<div class="footer">Avoca Onboarding Brief · Floor Nation (Victor's Home Solutions) · Generated June 29, 2026</div>
+</body>
+</html>
