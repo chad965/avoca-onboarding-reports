@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Onboarding Brief — Burkell Plumbing Inc.</title>
+<style>
+  :root {
+    --ink: #1a2233;
+    --muted: #5b6472;
+    --line: #e4e7ec;
+    --bg: #f7f8fa;
+    --card: #ffffff;
+    --accent: #1e6b52;
+    --accent-soft: #e7f3ee;
+    --amber: #b7791f;
+    --amber-soft: #fbf1de;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.55;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 40px 24px 80px; }
+  header.hero {
+    background: linear-gradient(135deg, #16463a 0%, #1e6b52 100%);
+    color: #fff;
+    border-radius: 16px;
+    padding: 36px 40px;
+    margin-bottom: 28px;
+  }
+  header.hero .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: .8;
+  }
+  header.hero h1 { margin: 8px 0 6px; font-size: 30px; }
+  header.hero p.sub { margin: 0; font-size: 15px; opacity: .9; }
+  .badge-row { display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap; }
+  .badge {
+    background: rgba(255,255,255,.14);
+    border: 1px solid rgba(255,255,255,.25);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  section.card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+  }
+  section.card h2 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--accent);
+    margin: 0 0 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  dl.facts { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; }
+  dl.facts dt { color: var(--muted); font-size: 13px; }
+  dl.facts dd { margin: 0; font-weight: 600; font-size: 14px; }
+  .stat-row { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 4px; }
+  .stat {
+    background: var(--accent-soft);
+    border-radius: 10px;
+    padding: 14px 18px;
+    flex: 1;
+    min-width: 140px;
+  }
+  .stat .num { font-size: 22px; font-weight: 700; color: var(--accent); }
+  .stat .label { font-size: 12px; color: var(--muted); margin-top: 2px; }
+  table.contacts { width: 100%; border-collapse: collapse; font-size: 14px; }
+  table.contacts th {
+    text-align: left; font-size: 12px; color: var(--muted);
+    text-transform: uppercase; letter-spacing: .04em;
+    padding: 8px 10px; border-bottom: 1px solid var(--line);
+  }
+  table.contacts td { padding: 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  table.contacts tr:last-child td { border-bottom: none; }
+  .tag {
+    display: inline-block;
+    background: var(--amber-soft);
+    color: var(--amber);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 6px;
+    margin-left: 6px;
+  }
+  ol.talking-points { margin: 0; padding-left: 20px; }
+  ol.talking-points li { margin-bottom: 14px; }
+  ol.talking-points li strong { display: block; margin-bottom: 3px; }
+  .note {
+    background: var(--amber-soft);
+    border: 1px solid #f0dcae;
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 13.5px;
+    color: #6b5117;
+  }
+  footer.meta {
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 30px;
+  }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="eyebrow">Implementation Onboarding Brief</div>
+    <h1>Burkell Plumbing Inc.</h1>
+    <p class="sub">Sausalito, CA &middot; Residential &amp; Commercial Plumbing / HVAC &middot; Closed Won 2026-06-17</p>
+    <div class="badge-row">
+      <span class="badge">IM: Jack Muccia</span>
+      <span class="badge">Deal: $27,000 New Business</span>
+      <span class="badge">Source: SDR Generated</span>
+    </div>
+  </header>
+
+  <section class="card">
+    <h2>Company Overview</h2>
+    <div class="grid-2">
+      <dl class="facts">
+        <dt>Legal name</dt><dd>Burkell Plumbing Inc.</dd>
+        <dt>Founded</dt><dd>1945 (3rd-generation family business, ~81 yrs)</dd>
+        <dt>HQ</dt><dd>2000 Bridgeway, Sausalito, CA 94965</dd>
+        <dt>Phone</dt><dd>415-332-3091</dd>
+        <dt>Website</dt><dd><a href="https://burkell.com" target="_blank">burkell.com</a></dd>
+        <dt>Employees (HubSpot)</dt><dd>5</dd>
+      </dl>
+      <dl class="facts">
+        <dt>Industry</dt><dd>Residential &amp; commercial plumbing / HVAC services</dd>
+        <dt>Services</dt><dd>Plumbing, heating &amp; A/C, air filtration, radiant heating, tankless water heaters, solar hot water</dd>
+        <dt>Reputation</dt><dd>206 reviews on Yelp; long-tenured technician team (15+ yrs avg.)</dd>
+        <dt>Lifecycle stage</dt><dd>Customer</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Recent Context</h2>
+    <p style="margin:0 0 10px;">Family-owned and operated since 1945 — currently run by Owner &amp; President <strong>Jake Newman</strong>, who has been with the company 35+ years. No major news events or press found (small, established local operator); the strongest available signal is a long-standing, well-reviewed local reputation rather than recent public news.</p>
+    <div class="note">No recent press/announcements surfaced in search — treat this as a stable, low-news-volume SMB account. Confirm any recent operational changes (new location, fleet expansion, etc.) directly on the kickoff call.</div>
+  </section>
+
+  <section class="card">
+    <h2>Deal Summary</h2>
+    <div class="stat-row">
+      <div class="stat"><div class="num">$27,000</div><div class="label">Deal amount (New Business)</div></div>
+      <div class="stat"><div class="num">Jun 17, 2026</div><div class="label">Closed Won date</div></div>
+      <div class="stat"><div class="num">SDR Generated</div><div class="label">Pipeline source</div></div>
+    </div>
+    <dl class="facts" style="margin-top:16px;">
+      <dt>Deal name</dt><dd>Burkell Plumbing Inc. - 2026 - [New Business]</dd>
+      <dt>Deal created</dt><dd>2026-06-16</dd>
+      <dt>Account Executive</dt><dd>Brian Realmonte <span class="tag">no longer active</span></dd>
+      <dt>Company owner (HubSpot)</dt><dd>Corbin Witte</dd>
+    </dl>
+  </section>
+
+  <section class="card">
+    <h2>Key Contacts</h2>
+    <table class="contacts">
+      <thead>
+        <tr><th>Name</th><th>Role</th><th>Email</th><th>Phone</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jake Newman</td>
+          <td>Owner <span class="tag">Decision Maker</span></td>
+          <td><a href="mailto:jake@burkell.com">jake@burkell.com</a></td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>Linda Newman</td>
+          <td>Operator</td>
+          <td><a href="mailto:lpnewman5@yahoo.com">lpnewman5@yahoo.com</a></td>
+          <td>415-847-2406</td>
+        </tr>
+        <tr>
+          <td>Rachael Newman</td>
+          <td>Operator</td>
+          <td>—</td>
+          <td>415-879-1487</td>
+        </tr>
+        <tr>
+          <td>General / Dispatch</td>
+          <td>Shared inbox</td>
+          <td><a href="mailto:hvac@burkell.com">hvac@burkell.com</a></td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>General / Billing</td>
+          <td>Shared inbox</td>
+          <td><a href="mailto:accounting@burkell.com">accounting@burkell.com</a></td>
+          <td>—</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>Recommended First-Contact Talking Points</h2>
+    <ol class="talking-points">
+      <li>
+        <strong>Lead with the family legacy.</strong>
+        Burkell has been Newman-family-run since 1945 and Jake has been at the helm for 35+ years — acknowledge the long track record rather than pitching this like a green-field startup rollout.
+      </li>
+      <li>
+        <strong>Confirm who's "in the truck" vs. "at the desk."</strong>
+        With only 5 employees and both Linda and Rachael listed as Operators, clarify dispatch/scheduling workflow early — call routing and after-hours handling likely matter more here than for a larger multi-location account.
+      </li>
+      <li>
+        <strong>Set expectations on rollout pace.</strong>
+        Small owner-operator shop — favor a lightweight, single-call onboarding over a multi-week enterprise rollout plan. Confirm timeline expectations with Jake directly since he's the economic buyer.
+      </li>
+      <li>
+        <strong>Flag the AE handoff gap.</strong>
+        The original AE (Brian Realmonte) is no longer active at Avoca — proactively acknowledge the account may not have had a warm handoff, and offer to re-confirm goals from the original sale.
+      </li>
+      <li>
+        <strong>Ask about seasonal call volume.</strong>
+        HVAC + plumbing combo shops in the Bay Area often see spring/summer A/C spikes and winter plumbing emergencies — understanding their call volume pattern will shape how you configure responder/coverage settings.
+      </li>
+    </ol>
+  </section>
+
+  <footer class="meta">
+    Generated for Implementation Manager Jack Muccia &middot; HubSpot Deal ID 61129214646 &middot; Company ID 49423202639<br>
+    Report generated 2026-07-12
+  </footer>
+
+</div>
+</body>
+</html>
