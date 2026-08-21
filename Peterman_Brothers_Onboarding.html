@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peterman Brothers — Customer Onboarding Report</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 24px; color: #1a1a1a; font-size: 15px; line-height: 1.6; }
+  h1 { font-size: 26px; font-weight: 800; margin-bottom: 10px; }
+  .meta p { margin: 2px 0; font-size: 15px; }
+  .meta strong { font-weight: 700; }
+  hr { border: none; border-top: 1px solid #ccc; margin: 24px 0; }
+  h2 { font-size: 13px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 12px; }
+  h3 { font-size: 15px; font-weight: 700; margin: 18px 0 6px; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 16px; }
+  th { background: #f5f5f5; font-weight: 700; text-align: left; padding: 8px 12px; border: 1px solid #ddd; font-size: 14px; }
+  td { padding: 8px 12px; border: 1px solid #ddd; font-size: 14px; vertical-align: top; }
+  tr:nth-child(even) td { background: #fafafa; }
+  .note { font-style: italic; margin: 10px 0 16px; font-size: 14px; color: #333; }
+  a { color: #1a73e8; }
+  .tag { display: inline-block; background: #e8f0fe; color: #1a56db; font-size: 11px; font-weight: 600; padding: 2px 7px; border-radius: 3px; margin-left: 4px; white-space: nowrap; }
+  .tag-calls { background: #e6f4ea; color: #137333; }
+  .tag-web { background: #fce8b2; color: #7b3f00; }
+  .tag-default { background: #fce8e2; color: #b31412; }
+  .tag-conflict { background: #f3e8fd; color: #7627bb; }
+  .risk-blocker { color: #b31412; font-weight: 700; }
+  .risk-risk { color: #e37400; font-weight: 700; }
+  .risk-low { color: #137333; font-weight: 700; }
+  ul { margin: 6px 0; padding-left: 20px; }
+  li { margin-bottom: 3px; }
+  .callout { background: #fff8e1; border: 1px solid #f0d68a; border-radius: 6px; padding: 12px 16px; margin: 16px 0; font-size: 14px; }
+</style>
+</head>
+<body>
+
+<h1>Peterman Brothers &mdash; Customer Onboarding Report</h1>
+<div class="meta">
+  <p><strong>Deal:</strong> Peterman Brothers - Coach | Closed Won | $20,400 | 2026-08-20</p>
+  <p><strong>AE:</strong> Nicholas Danilo (nd@avoca.ai)</p>
+  <p><strong>IM Assigned:</strong> None &mdash; account needs a long-term TAM assigned (see callout below)</p>
+  <p><strong>Generated:</strong> 2026-08-21</p>
+</div>
+
+<div class="callout">
+  <strong>This is not a greenfield onboarding.</strong> Peterman Brothers originally signed with Avoca in January 2025 and has been piloting Coach on-and-off since roughly February 2026, run informally by AE Nick Danilo with engineering support from Weber Gaowen and Dragos. This new $20,400 deal (17 Coach seats &times; $200/mo, ~6-month term, ~50% "family &amp; friends" discount) formalizes/expands that existing relationship. Per Nick Danilo in Slack today (8/21): <em>"they're already implemented &amp; onboarded, we just need a long term TAM resource to assign to the account."</em> Treat this as a TAM handoff and pilot-to-production conversion, not a Week 0 kickoff. Billing also requires manual handling per Avoca's billing-engine bot, since this is a prior-closed-won existing customer.
+</div>
+
+<hr>
+
+<h2>Status Snapshot</h2>
+<table>
+  <thead><tr><th>Product</th><th>Status</th><th>Next Step</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Coach</strong> (17 seats)</td>
+      <td>Active but mid-rollout &mdash; extended pilot since ~Feb 2026; CSRs still do not have dashboard access (pending leadership approval); scoring rubric flagged as miscalibrated</td>
+      <td>Assign a long-term TAM immediately; resolve rubric/call-type calibration; unblock CSR dashboard rollout</td>
+    </tr>
+  </tbody>
+</table>
+<p class="note">No firm go-live date exists because Coach is already live in pilot form &mdash; the real "go-live" is CSR dashboard access, which is gated on leadership sign-off on KPI definitions. Chad Peterman (CEO) said in the 8/7 call the product is "working well" and he wants to move forward, but the CFO ("Mike") still needs to review the agreement.</p>
+
+<hr>
+
+<h2>Key Contacts</h2>
+<table>
+  <thead><tr><th>Name</th><th>Email</th><th>Phone</th><th>Role</th></tr></thead>
+  <tbody>
+    <tr><td>Chad Peterman</td><td>chad@petermanhvac.com</td><td>(317) 859-4270</td><td><strong>CEO &mdash; economic buyer / executive sponsor.</strong> On nearly every strategic call; wants Coach calibrated and is open to being a design partner. Also a high-value relationship contact (golf events, partnership marketing, podcast).</td></tr>
+    <tr><td>Shannon Barron</td><td>sbarron@petermanhvac.com</td><td>(317) 316-8613</td><td>Chief of Staff. Appears on almost every call (Coach check-ins, golf events, partnership calls) &mdash; de facto relationship coordinator.</td></tr>
+    <tr><td>Steve White</td><td>swhite@petermanhvac.com</td><td>+1 317-590-7539</td><td>Director of Sales &mdash; not yet seen on Coach calls but worth looping in given role.</td></tr>
+    <tr><td>Blythe Brown</td><td>bbrown@petermanhvac.com</td><td>+1 765-210-3238</td><td>ServiceTitan Integration Manager &mdash; likely the right technical contact for any ST/Coach sync issues.</td></tr>
+    <tr><td>Alex Ladd</td><td>aladd@petermanhvac.com</td><td>+1 317-270-0385</td><td>Customer Retention Manager.</td></tr>
+    <tr><td>Brittany Williams</td><td>bwilliams@petermanhvac.com</td><td>+1 317-886-7824</td><td>Customer Service Manager.</td></tr>
+    <tr><td>Matt Murray</td><td>mmurray@petermanhvac.com</td><td>(317) 505-1989</td><td>Director of Marketing &amp; Innovation. Built much of Peterman's marketing/data operation; recommended contact for any marketing-engine or database-activation discussion.</td></tr>
+  </tbody>
+</table>
+<p class="note"><span class="tag tag-conflict">DATA GAP</span> Kalista/Calista Pickardt, Abbie Doyle, and "Christa/Kristy" are the actual day-to-day operational owners of Coach call-reason configuration and QA auditing per the call transcripts (kpickhardt@petermanhvac.com, adoyle@petermanhvac.com) &mdash; but none of the three have a Contact record associated with this Company in HubSpot. Worth creating/associating those records before a TAM takes over, since they're more operationally central to Coach than several contacts listed above.</p>
+
+<hr>
+
+<h2>Company Background</h2>
+<p>Peterman Brothers is a family-owned home services company (40+ years) headquartered in Indianapolis, operating 9 locations across Indiana, Ohio, and Kentucky (Indianapolis, Bloomington, Columbus, Fort Wayne, Lafayette, Muncie, South Bend, Louisville), covering HVAC, plumbing, drains, and electrical. Per their own site: 20,000+ five-star reviews and multiple industry awards (2024 Best HVAC Provider). Internally, Avoca considers them "one of the largest HVAC shops" in the industry and a marquee logo &mdash; Chad Peterman is described internally as "one of the most powerful voices in the entire industry." Beyond the Coach product relationship, there's a broader partnership: a $5,000/mo arrangement with Chad's "Can't Stop the Growth" referral network ($3,000/mo for introductions, $2,000/mo for the coaching product), golf/relationship events (a Sept 8&ndash;9 VIP golf tournament + shop tour with a $500K ARR goal was being planned), and a recorded podcast appearance. Chad has also expressed interest in Avoca becoming a broader "AI revenue engine" beyond Coach &mdash; a real upsell signal for marketing/database-activation and possibly inbound voice AI, though he's currently reliant on ProBook for that (see Risk Assessment).</p>
+
+<hr>
+
+<h2>KB Pre-Fill Draft</h2>
+<!-- Source tag legend:
+  <span class="tag">HUBSPOT</span>             = HubSpot data only
+  <span class="tag tag-calls">CALLS</span>      = Attention calls only
+  <span class="tag tag-web">WEB</span>          = Website scrape only
+  <span class="tag tag-default">DEFAULT</span>  = Industry best practice, no customer data — must confirm
+  <span class="tag tag-conflict">CONFLICT</span>= Sources disagree — explain both in the cell
+  No tag = confirmed from multiple sources
+-->
+
+<h3>Company Info &amp; Hours</h3>
+<table>
+  <thead><tr><th>Field</th><th>Value</th><th>Source</th></tr></thead>
+  <tbody>
+    <tr><td>Company</td><td>Peterman Brothers (HVAC/plumbing/drains/electrical)</td><td></td></tr>
+    <tr><td>HQ / Locations</td><td>Indianapolis HQ; 9 locations across IN/OH/KY</td><td><span class="tag tag-web">WEB</span></td></tr>
+    <tr><td>Website</td><td>petermanhvac.com</td><td><span class="tag">HUBSPOT</span></td></tr>
+    <tr><td>Phone</td><td>+1 317-497-0303</td><td><span class="tag">HUBSPOT</span></td></tr>
+    <tr><td>Business hours / AI coverage scope</td><td>Not confirmed &mdash; site implies 24/7 responsiveness ("today or in 10 years from now") but no explicit hours stated</td><td><span class="tag tag-default">DEFAULT</span> &mdash; must confirm</td></tr>
+  </tbody>
+</table>
+
+<h3>CRM</h3>
+<table>
+  <thead><tr><th>Field</th><th>Value</th><th>Source</th></tr></thead>
+  <tbody>
+    <tr><td>CRM / dispatch system</td><td>ServiceTitan</td><td><span class="tag tag-calls">CALLS</span></td></tr>
+    <tr><td>Current inbound voice AI vendor</td><td><span class="tag tag-conflict">CONFLICT</span>: A Jan 2025 internal Slack post said Peterman was "currently also piloting SameDay" (a competitor). A Jul 27, 2026 call instead names <strong>ProBook</strong> as their current integrated dispatch/inbound voice AI, with no mention of SameDay. Both may be true at different points in time &mdash; confirm current vendor before any inbound/voice pitch.</td><td><span class="tag tag-conflict">CONFLICT</span></td></tr>
+    <tr><td>Avoca products in use</td><td>Coach only (no Responder/inbound voice, no Speed to Lead/outbound)</td><td><span class="tag tag-calls">CALLS</span></td></tr>
+    <tr><td>Coach&ndash;ServiceTitan sync</td><td>Coach periodically syncs ServiceTitan call reasons; reasons can be managed/deleted in Coach. Coach reclassifies calls but does not write back to ST cancellation reasons/notes.</td><td><span class="tag tag-calls">CALLS</span></td></tr>
+    <tr><td>Capacity planning (ACP/ADCAP/manual)</td><td>Not discussed in any reviewed call</td><td>&mdash;</td></tr>
+  </tbody>
+</table>
+
+<h3>Services</h3>
+<table>
+  <thead><tr><th>Service</th><th>Book?</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr><td>HVAC (cooling, heating, mini splits, thermostats, air quality)</td><td>✅ Yes</td><td>Core service line</td></tr>
+    <tr><td>Plumbing (repairs, install, water heaters, gas lines, sump pumps)</td><td>✅ Yes</td><td></td></tr>
+    <tr><td>Drains (clearing, rooter, sewer/water line)</td><td>✅ Yes</td><td></td></tr>
+    <tr><td>Electrical (repairs, install, generators, EV chargers)</td><td>✅ Yes</td><td></td></tr>
+    <tr><td>Membership program</td><td>✅ Yes</td><td>"Peterman Protection Club" + "Filter Saver Club"; team is prioritizing membership call handling this year (see Memberships below)</td></tr>
+    <tr><td>Commercial vs. residential scope</td><td>⚠️ Not confirmed</td><td>Not discussed in any reviewed call &mdash; site markets primarily to residential</td></tr>
+  </tbody>
+</table>
+
+<h3>Emergency &amp; After-Hours Handling</h3>
+<table>
+  <thead><tr><th>Scenario</th><th>Handling</th><th>Source</th></tr></thead>
+  <tbody>
+    <tr><td>Emergency triggers / after-hours routing / on-call tech</td><td>Not discussed in any reviewed call. Site implies always-available service but gives no explicit after-hours process.</td><td><span class="tag tag-default">DEFAULT</span> &mdash; must confirm</td></tr>
+  </tbody>
+</table>
+
+<h3>Fees</h3>
+<table>
+  <thead><tr><th>Fee</th><th>Value</th><th>Source</th></tr></thead>
+  <tbody>
+    <tr><td>Coach package cost</td><td>17 seats &times; $200/mo = $3,400/mo ($20,400 over the ~6-month term)</td><td><span class="tag">HUBSPOT</span></td></tr>
+    <tr><td>Discount</td><td>~50% "family &amp; friends" discount referenced by AE on the 8/7 call</td><td><span class="tag tag-calls">CALLS</span></td></tr>
+    <tr><td>Billing process</td><td>Flagged by Avoca's billing bot as requiring <strong>manual billing</strong> because Peterman is an existing customer with a prior closed-won deal</td><td><span class="tag">HUBSPOT</span>/Slack</td></tr>
+    <tr><td>Dispatch fee / after-hours fee / member rate</td><td>Not discussed in any reviewed call</td><td>&mdash;</td></tr>
+  </tbody>
+</table>
+
+<h3>Memberships</h3>
+<table>
+  <thead><tr><th>Field</th><th>Value</th><th>Source</th></tr></thead>
+  <tbody>
+    <tr><td>Active program?</td><td>Yes &mdash; "Peterman Protection Club" (maintenance plans) and "Filter Saver Club" (filter subscription)</td><td><span class="tag tag-web">WEB</span></td></tr>
+    <tr><td>2026 priority</td><td>Team explicitly said they're "focusing heavily on memberships this year" and want dedicated Coach call-reasons for membership inquiry vs. membership cancellation</td><td><span class="tag tag-calls">CALLS</span></td></tr>
+    <tr><td>Bot/CSR behavior re: membership calls</td><td>Not yet configured &mdash; still being defined as part of the call-reason overhaul</td><td><span class="tag tag-calls">CALLS</span></td></tr>
+  </tbody>
+</table>
+
+<h3>Agent Configuration</h3>
+<table>
+  <thead><tr><th>Setting</th><th>Value</th><th>Source</th></tr></thead>
+  <tbody>
+    <tr><td>Call-reason taxonomy</td><td>In active revision. Weber (Avoca) proposed 5 new reasons: cancellation, invoice, membership cancellation, membership inquiry, follow-up job. Prior taxonomy was too broad, causing general inquiries/membership/follow-up calls to be misclassified as bookable pricing calls.</td><td><span class="tag tag-calls">CALLS</span></td></tr>
+    <tr><td>Scoring rubric</td><td>Empathy criteria currently applied to call types where it doesn't belong (rescheduling, ETA checks, technical/invoice calls), depressing scores unfairly &mdash; top CSR score was ~70%, which the CEO called a "D grade." Customer wants rubric criteria to vary by call type.</td><td><span class="tag tag-calls">CALLS</span></td></tr>
+    <tr><td>Recovery/task list scope</td><td>Dispatcher calls are currently included in CSR-focused recovery/task lists, which the customer wants filtered out (inbound CSRs only)</td><td><span class="tag tag-calls">CALLS</span></td></tr>
+    <tr><td>CSR dashboard access</td><td>Not yet enabled &mdash; gated on leadership approving finalized KPI definitions</td><td><span class="tag tag-calls">CALLS</span></td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>Risk Assessment</h2>
+<table>
+  <thead><tr><th>Level</th><th>Risk</th><th>Recommended Action</th></tr></thead>
+  <tbody>
+    <tr><td><span class="risk-risk">RISK</span></td><td>No TAM has been assigned since the deal closed (8/20). AE Nick Danilo is currently the only point of contact and has said explicitly this needs to be handed off.</td><td>Assign a long-term TAM immediately &mdash; this is the single blocking action item on the account right now.</td></tr>
+    <tr><td><span class="risk-risk">RISK</span></td><td>Rubric/call-type miscalibration has been a recurring, months-long complaint (raised independently across the Apr 3 and Aug 7 calls) and is the customer's stated reason the product doesn't yet feel "done." CEO Chad Peterman has directly criticized the scoring as unfairly low.</td><td>Prioritize the rubric/call-type calibration work (5 new call reasons, empathy-criteria scoping) before anything else &mdash; this is what's standing between pilot and full rollout.</td></tr>
+    <tr><td><span class="risk-risk">RISK</span></td><td>Communication/ownership has been unclear to the customer for months &mdash; Abby/Kalista explicitly said they felt "in the dark," and a self-imposed go-live-by-the-1st was missed with no clear follow-up cadence.</td><td>As the new TAM, establish an explicit communication/escalation process and cadence in the first touch &mdash; this is a named customer ask, not a nice-to-have.</td></tr>
+    <tr><td><span class="risk-low">LOW RISK</span></td><td>CEO Chad Peterman flagged a concern that ServiceTitan could restrict Avoca's ability to expand into dispatch-adjacent workflows, and said he doesn't want to invest further if that expansion path gets cut off.</td><td>No immediate action needed for Coach itself, but keep in mind before proposing any dispatch-adjacent expansion (e.g., Responder) to this account.</td></tr>
+    <tr><td><span class="risk-low">LOW RISK</span></td><td>Vendor/current-solution data conflict: Slack (Jan 2025) says they were piloting SameDay; a 2026 call names ProBook as their current inbound AI/dispatch tool. Unclear which is accurate today.</td><td>Confirm current inbound-AI vendor status directly with Chad or Matt before any inbound/voice upsell conversation.</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>TAM Handoff Brief</h2>
+<table>
+  <thead><tr><th>Item</th><th>Detail</th></tr></thead>
+  <tbody>
+    <tr><td>CRM</td><td>ServiceTitan</td></tr>
+    <tr><td>Products</td><td>Coach (17 seats); no Responder/inbound voice or outbound products</td></tr>
+    <tr><td>Capacity Planning</td><td>Not established/discussed &mdash; not applicable to Coach specifically</td></tr>
+    <tr><td>Team Signals</td><td>Large call center/team; named operational staff include Abby Doyle, Kalista Pickardt, Christa/Kristy, Grant Goe; exact CSR/tech/truck counts unconfirmed (AE asked if they have "11 CSRs" and customer wasn't sure)</td></tr>
+    <tr><td>Primary POC (day-to-day)</td><td>Abby Doyle &amp; Kalista Pickardt (call-reason/QA ownership) &mdash; neither has a HubSpot contact record yet</td></tr>
+    <tr><td>Economic Buyer</td><td>Chad Peterman (CEO); contract/financial sign-off routes through "Mike" (likely CFO, unconfirmed)</td></tr>
+    <tr><td>Go-Live Target</td><td>No new go-live &mdash; product is already live in pilot form; real milestone is CSR dashboard rollout pending leadership KPI approval</td></tr>
+    <tr><td>Key Concerns</td><td>Rubric calibration, communication clarity, dispatcher-vs-CSR filtering in recovery/task lists</td></tr>
+    <tr><td>Open Questions</td><td>Current inbound-AI vendor (ProBook vs. SameDay conflict); exact team size/call volume; commercial vs. residential mix; after-hours/emergency handling; dispatch/member fee structure; who "Mike" is</td></tr>
+    <tr><td>Relationship note</td><td>Beyond Coach, Chad Peterman is a high-touch strategic relationship &mdash; referral partnership, golf/marketing events, and stated interest in Avoca becoming a broader "AI revenue engine." Loop in Nick Danilo / leadership before making unilateral relationship-level commitments.</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>Week 0 Call Prep</h2>
+<p class="note">Framed as a <strong>TAM introduction / pilot-to-production kickoff</strong> rather than a true Week 0, since the product is already live.</p>
+
+<h3>Before the Call</h3>
+<ul>
+  <li>Read the full Coach pilot history in this report (Apr 3 and Aug 7 calls) &mdash; do not ask the customer to re-explain the rubric problem from scratch, they've raised it multiple times already.</li>
+  <li>Review Weber's proposed 5-reason call taxonomy and its current implementation status before the call.</li>
+  <li>Confirm internally who "Mike" is and whether the contract/financial review has closed.</li>
+  <li>Create HubSpot contact records for Abby Doyle (adoyle@petermanhvac.com) and Kalista Pickardt (kpickhardt@petermanhvac.com) if not already done.</li>
+</ul>
+
+<h3>Question-by-Question Agenda</h3>
+<table>
+  <thead><tr><th>Section</th><th>Time</th><th>Questions</th></tr></thead>
+  <tbody>
+    <tr><td>Introductions &amp; ownership</td><td>5 min</td><td>Introduce yourself as the new long-term TAM; confirm who owns what day-to-day (Abby/Kalista vs. Chad vs. Matt)</td></tr>
+    <tr><td>Rubric/calibration status</td><td>15 min</td><td>Where did the 5-reason taxonomy rollout land? Has the 200-call audit been completed? What's still misclassifying?</td></tr>
+    <tr><td>CSR dashboard rollout</td><td>10 min</td><td>What's blocking leadership sign-off on KPIs? What would unblock CSR dashboard access this month?</td></tr>
+    <tr><td>Recovery/task list scope</td><td>10 min</td><td>Confirm whether dispatcher-call filtering has been implemented; is the CSR-only view working as expected?</td></tr>
+    <tr><td>Account fundamentals</td><td>10 min</td><td>Team size (CSRs/techs/trucks), call volume, commercial vs. residential mix, after-hours/emergency process, dispatch/member fees</td></tr>
+    <tr><td>Relationship &amp; expansion</td><td>10 min</td><td>Gauge current interest in Avoca as a broader "AI revenue engine" (marketing/database activation, inbound voice) given Chad's past comments &mdash; but don't over-pitch on a calibration-focused call</td></tr>
+  </tbody>
+</table>
+
+<h3>Don't Forget</h3>
+<ul>
+  <li>Chad Peterman is a marquee, highly-referenceable customer with real influence in the HVAC industry &mdash; treat escalations with priority; he's also a personal relationship of Avoca leadership (golf events, referral partnership, podcast).</li>
+  <li>The team has felt "in the dark" on process/communication before &mdash; over-communicate rather than under-communicate, especially around anything with a stated deadline.</li>
+  <li>Don't lead with new product pitches (inbound voice, outbound) until the Coach calibration issue is resolved &mdash; it's an active point of frustration and would read as tone-deaf.</li>
+  <li>Billing on this account needs to be handled manually per the billing-engine bot &mdash; confirm this has actually been processed, don't assume standard automated billing applies.</li>
+</ul>
+
+<hr>
+
+<h2>Relationship Timeline</h2>
+<table>
+  <thead><tr><th>Date</th><th>Event</th></tr></thead>
+  <tbody>
+    <tr><td>2025-01-03</td><td>Slack: "Peterman Brothers has officially signed with us" &mdash; also noted as piloting SameDay concurrently</td></tr>
+    <tr><td>2025-02-16</td><td>Chad Peterman appears on a cross-account relationship-building list alongside other major HVAC/plumbing brands</td></tr>
+    <tr><td>2026-02-05</td><td>Golf event planning kicks off (Brickyard Crossing tournament + Peterman Brothers shop tour), goal of 12 new closed-won deals from the broader event</td></tr>
+    <tr><td>~2026-02</td><td>Coach pilot/proof-of-concept begins (data setup and backfill)</td></tr>
+    <tr><td>2026-03-17</td><td>Call: "Peterman Brothers x Avoca Onboarding" (demo of CRM task-management workflow)</td></tr>
+    <tr><td>2026-04-03</td><td>Two "Peterman Coach Check-In" calls &mdash; call-reason taxonomy and rubric issues raised; missed self-imposed go-live date acknowledged</td></tr>
+    <tr><td>2026-04-06</td><td>Avoca CAB Bi-Monthly Check-In with Chad Peterman &mdash; broader relationship/marketing-engine discussion, ServiceTitan expansion-risk concern raised</td></tr>
+    <tr><td>2026-04-15</td><td>Slack: Indianapolis VIP golf tournament planning (Sept 8&ndash;9) with a $500K ARR goal</td></tr>
+    <tr><td>2026-04-20</td><td>Call: partnership/referral economics discussed ($5,000/mo Can't Stop the Growth arrangement); Feb/Mar invoices flagged as outstanding</td></tr>
+    <tr><td>2026-07-27</td><td>Call: "Peterman + Avoca: Coach Evaluation" &mdash; booking rate improvement (70%&rarr;80%+) discussed; ProBook named as current inbound AI; ~$13.2&ndash;13.5K pricing floated</td></tr>
+    <tr><td>2026-08-07</td><td>Call: "Peterman + Avoca: Coach" &mdash; rubric/scoring complaints, CSR count question, agreement to be resent</td></tr>
+    <tr><td><strong>2026-08-20</strong></td><td><strong>Deal closed: Peterman Brothers - Coach, $20,400 (17 seats, ~6 months, ~50% discount)</strong></td></tr>
+    <tr><td>2026-08-21</td><td>Slack: AE Nick Danilo flags that the account needs a long-term TAM assigned; billing-engine bot flags manual billing requirement</td></tr>
+  </tbody>
+</table>
+
+<p style="font-size:12px; color:#888; margin-top:32px;">Sources: HubSpot (company/contacts/deal/line items) &mdash; complete. Attention calls (7 analyzed: onboarding demo, 2 Coach check-ins, CAB check-in, partnership call, Coach Evaluation, Coach) &mdash; complete. Slack (15 results across #gtm, #sales, #partnerships, #customer-success, #billing-engine, #coach, #submitted-forms, and DMs) &mdash; complete. Website (petermanhvac.com) &mdash; complete.</p>
+
+</body>
+</html>
